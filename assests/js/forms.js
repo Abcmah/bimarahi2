@@ -7,7 +7,7 @@ let tabThree = document.querySelector('#tab-three')
 
 tabOne.addEventListener('click',()=>{
     formOne.style.display = "block";
-tabOne.classList.add('activated')
+    tabOne.classList.add('activated')
     formThree.style.display = "none";
     formTwo.style.display = "none";
     tabTwo.classList.remove('activated')
@@ -20,6 +20,7 @@ tabTwo.addEventListener('click',()=>{
     tabOne.classList.remove('activated')
     tabThree.classList.remove('activated')
     formTwo.style.display = "block";
+    console.log('works')
 })
 tabThree.addEventListener('click',()=>{
     formOne.style.display = "none";
@@ -29,3 +30,10 @@ tabThree.addEventListener('click',()=>{
     tabTwo.classList.remove('activated');
     formTwo.style.display = "none";
 })
+
+// function switchTab(form){
+//     if(form =='form-one'){
+
+//     }
+
+// }

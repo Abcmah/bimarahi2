@@ -7,14 +7,14 @@
   <meta content="Fast and easy online insurance" name="description">
   <meta content="Bimarahisi" name="author">
   <!-- Google Fonts -->
-  <link href="./Fast and Easy Insurance_Bima Rahisi_files/css" rel="stylesheet">
+  <!-- <link href="./Fast and Easy Insurance_Bima Rahisi_files/css" rel="stylesheet"> -->
   <!-- Bootstrap CSS File -->
   <link href="./Fast and Easy Insurance_Bima Rahisi_files/bootstrap.min.css" rel="stylesheet">
   <!-- Libraries CSS Files -->
-  <link href="./Fast and Easy Insurance_Bima Rahisi_files/font-awesome.min.css" rel="stylesheet">
+  <!-- <link href="./Fast and Easy Insurance_Bima Rahisi_files/font-awesome.min.css" rel="stylesheet"> -->
   <link href="./Fast and Easy Insurance_Bima Rahisi_files/animate.min.css" rel="stylesheet">
-  <link href="./Fast and Easy Insurance_Bima Rahisi_files/ionicons.min.css" rel="stylesheet">
-  <link href="./Fast and Easy Insurance_Bima Rahisi_files/owl.carousel.min.css" rel="stylesheet">
+  <!-- <link href="./Fast and Easy Insurance_Bima Rahisi_files/ionicons.min.css" rel="stylesheet"> -->
+  <!-- <link href="./Fast and Easy Insurance_Bima Rahisi_files/owl.carousel.min.css" rel="stylesheet"> -->
   <link href="./Fast and Easy Insurance_Bima Rahisi_files/lightbox.min.css" rel="stylesheet">
   <!-- Main Stylesheet File -->
   <link href="./Fast and Easy Insurance_Bima Rahisi_files/style.css" rel="stylesheet">
@@ -35,7 +35,34 @@
       <nav class="main-nav float-right d-none d-lg-block">
         <ul>
           <li class="active"><a href="index.html">Home</a></li>
-          <li><a href="#about">About Us</a></li>        
+          <li><a href="about.html">About Us</a></li>
+          <li class="drop-down"><a href="#">Our Products<span><svg id="dropdown-icon" width="16" height="16" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg" fill="currentColor"><path fill-rule="evenodd" clip-rule="evenodd" d="M7.976 10.072l4.357-4.357.62.618L8.284 11h-.618L3 6.333l.619-.618 4.357 4.357z"/></svg></span></a>
+            <ul>
+              <li><a href="./motorinsurance.html">Motor Insurance</a></li>
+              <li class="drop-down"><a href="microhealth.html">Micro Insurance</a>
+                <ul>
+                  <li><a href="./hospitalcash.html">Hospital Cash</a></li>
+                  <li><a href="./educateprotect.html">Educate Protect</a></li>
+                  <li><a href="./internal.html">Internal Travel</a></li>
+                  <li><a href="./student.html">Student Insurance</a></li>              
+                </ul>
+              </li>
+              <li><a href="./travel.html">Travel Insurance</a></li>
+              <li class="drop-down"><a href="./personal.html">Personal Cover</a>
+                <ul>
+                  <li><a href="./personal.html">Personal Accident</a></li>
+                  <li><a href="./personal.html">Group Personal Accident</a></li>          
+                </ul>
+              </li>
+              <li class="drop-down"><a href="./healthcover.html">Health Insurance</a>
+                <ul>
+                  <li><a href="./healthcover.html">Health Insurance</a></li>
+                  <li><a href="./microhealth.html">Micro Health cover</a></li>                          
+                </ul>
+              </li> 
+              <li><a href="./agric.html">Agricultural Cover</a></li>
+            </ul>
+          </li>        
           <li><a href="#contact">Contact Us</a></li>
           <li><a href="#footer">Terms and Policies</a></li>
         </ul>
@@ -46,14 +73,62 @@
   <!-- ================================= -->
   <section id="hero">
     <div class="container">
-        <div class="forms">
-          <div class="tabular-nav">
+      <div class="row hero-row">
+        <div class="col-lg-4">
+          <div class="products">
+              <div class=" title">
+                  <h4>Other Insurance Products</h4>
+              </div>
+              <div class="container">
+                  <div class="item">
+                      Motor/Car Insurance
+                      <ul>
+                          <li><a href="motorinsurance.html">Get quote</a></li>
+                      </ul>
+                  </div>
+                  <div class="item">
+                      Travel Insurance
+                      <ul>
+                          <li><a href="travel.html">Get quote</a></li>
+                      </ul>
+                  </div>
+                  <div class="item">
+                      Personal Accident
+                      <ul>
+                          <li><a href="personal.html">Get quote</a> </li>
+                      </ul>
+                  </div>
+                  <div class="item">
+                      Health Cover
+                      <ul>
+                          <li><a href="healthcover.html">Get quote</a></li>
+                      </ul>
+                  </div>
+                  <div class="item">
+                    see all products
+                    <ul>
+                        <li><a href="allproducts.html">See more</a></li>
+                    </ul>
+                </div>
+              </div>
+          </div>
+          
+         
+      </div>
+
+        <div style="padding-left: 0; padding-right: 0%;" class="forms">
+          <div class="nav-tab tabular-nav">
+            <div id="tab-one" class="tab activated">Individual</div>
+            <div id="tab-two" class="tab">Institution</div>
+            <div id="tab-three" class="tab">Other</div>
+        </div>
+          <!-- <div class="tabular-nav">
             <ul class="nav nav-tabs">
                 <li  style="width: 33%;" class="nav-item "><a id="tab-one" class="nav-link activated" href="#">Individual</a></li>
                 <li style="width: 33%; "class="nav-item"><a id="tab-two" class="nav-link" href="#">Institution</a></li>
                 <li style="width: 33%; text-align: center;" class="nav-item"><a id="tab-three" class="nav-link" href="#">Other</a></li>
             </ul>
-        </div>
+        </div> -->
             <div class="container">
                 <form class="tab-one" action="">
                 
@@ -111,6 +186,8 @@
             </div>
 
         </div>
+      </div>
+        
 
     </div>
 </section>
@@ -118,47 +195,20 @@
 <section>
   <div class="container">
       <div class="row ">
-          <div class="col-lg-4">
-              <div class="products">
-                  <div class=" title">
-                      <h4>Health Related Insurance</h4>
-                  </div>
-                  <div class="container">
-                      <div class="item">
-                          Personal Accident Cover
-                          <ul>
-                              <li>Get quote</li>
-                          </ul>
-                      </div>
-                      <div class="item">
-                          Hospital Cash
-                          <ul>
-                              <li>Get quote</li>
-                          </ul>
-                      </div>
-                      <div class="item">
-                          Group Personal Accident
-                          <ul>
-                              <li>Get quote</li>
-                          </ul>
-                      </div>
-                      <div class="item">
-                          Micro Health Cover
-                          <ul>
-                              <li>Get quote</li>
-                          </ul>
-                      </div>
-                      
-                  </div>
-              </div>
-              
-             
-          </div>
           
-          <div class="col-lg-4">
+          
+          <div class="col-lg-4 student-list">
+            <h3 style="margin: 0;padding: 0;">Student Insurance</h3>
+              <h5>Fast and Eazy insurance</h5>
               <p>
-                With Bima Rahisi we work with you to tailor make insurance to your need; Medical bills should not worry you. We have some great health cover plans with amazing perks, for everyone. Choose the one that suits your needs, medical insurance benefits with flexible packages for individuals, family, groups and the self-employed.
+                Designed for primary school pupils, as well as secondary and university students, to cover the risk of financial consequences resulting from accidents. This cover can be taken out by parents, Guardians or education institutions
               </p>
+              <h5>Benefits :</h5>
+              <ul>
+                <li>Financial compensation in case of an accident</li>
+                <li>Peace of mind</li>
+                <li>Institutions can use it as a retention/attraction tool to existing/new students</li>
+              </ul>
           </div>
       </div>
 
@@ -182,13 +232,13 @@
           </a><div class="col-lg-2 col-md-6 footer-links"><a href="tel:+254703065065">
             <h4>Useful Links</h4>
             </a><ul><a href="tel:+254703065065">
-              </a><li><a href="tel:+254703065065"></a><a href="https://bimarahisi.ke/index.php">Home</a></li>
-              <li><a href="https://bimarahisi.ke/motor.php">Motor Insurance</a></li>
+              </a><li><a href="tel:+254703065065"></a><a href="index.html">Home</a></li>
+              <li><a href="motorinsurance.html">Motor Insurance</a></li>
           
-              <li><a href="https://bimarahisi.ke/travel.php">Travel Insurance</a></li>
-                  <li><a href="https://bimarahisi.ke/personal.php">Personal Cover</a></li>
-                  <li><a href="https://bimarahisi.ke/internaltravel.php">Internal Travel</a></li>
-                  <li><a href="https://bimarahisi.ke/health.php">Health Insurance</a></li>
+              <li><a href="travel.html">Travel Insurance</a></li>
+                  <li><a href="personal.html">Personal Cover</a></li>
+                  <li><a href="internal.html">Internal Travel</a></li>
+                  <li><a href="healthcover.html">Health Insurance</a></li>
              
             </ul>
           </div>
@@ -281,14 +331,14 @@ go to top button
   <!-- JavaScript Libraries -->
   <script src="./Fast and Easy Insurance_Bima Rahisi_files/jquery.min.js"></script>
   <script src="./Fast and Easy Insurance_Bima Rahisi_files/jquery-migrate.min.js"></script>
-  <script src="./Fast and Easy Insurance_Bima Rahisi_files/bootstrap.bundle.min.js"></script>
-  <script src="./Fast and Easy Insurance_Bima Rahisi_files/easing.min.js"></script>
+  <!-- <script src="./Fast and Easy Insurance_Bima Rahisi_files/bootstrap.bundle.min.js"></script> -->
+  <!-- <script src="./Fast and Easy Insurance_Bima Rahisi_files/easing.min.js"></script> -->
   <script src="./Fast and Easy Insurance_Bima Rahisi_files/mobile-nav.js"></script>
   <script src="./Fast and Easy Insurance_Bima Rahisi_files/wow.min.js"></script>
-  <script src="./Fast and Easy Insurance_Bima Rahisi_files/waypoints.min.js"></script>
-  <script src="./Fast and Easy Insurance_Bima Rahisi_files/counterup.min.js"></script>
-  <script src="./Fast and Easy Insurance_Bima Rahisi_files/owl.carousel.min.js"></script>
-  <script src="./Fast and Easy Insurance_Bima Rahisi_files/isotope.pkgd.min.js"></script>
+  <!-- <script src="./Fast and Easy Insurance_Bima Rahisi_files/waypoints.min.js"></script> -->
+  <!-- <script src="./Fast and Easy Insurance_Bima Rahisi_files/counterup.min.js"></script> -->
+  <!-- <script src="./Fast and Easy Insurance_Bima Rahisi_files/owl.carousel.min.js"></script> -->
+  <!-- <script src="./Fast and Easy Insurance_Bima Rahisi_files/isotope.pkgd.min.js"></script> -->
   <script src="./Fast and Easy Insurance_Bima Rahisi_files/lightbox.min.js"></script>
   <!-- Contact Form JavaScript File -->
   <script src="./Fast and Easy Insurance_Bima Rahisi_files/contactform.js"></script>

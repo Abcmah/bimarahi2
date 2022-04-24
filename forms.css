@@ -1,6 +1,9 @@
 /* =====================
 tab .forms
 ===================== */
+body{
+    background-color: #fcfcfc;
+}
 .activated{
     border: 1px rgba(0, 0, 0,0.6);
     background: rgba(215, 221, 226, 0.836);
@@ -10,13 +13,12 @@ tab .forms
 .forms{
     width: 40%;
     box-shadow: -1px -1px 10px rgb(182, 173, 173);
-    /* border-radius: 10px; */
     padding-bottom: 10px;
     margin-bottom:60px;
 }
 .tabular-nav{
     /* border-radius: 10px; */
-    background: rgba(241, 243, 245, 0.753);
+    background: rgba(219, 231, 243, 0.753);
     backdrop-filter: blur(12px);
     -webkit-backdrop-filter: blur(12px);
 }
@@ -27,6 +29,18 @@ tab .forms
 .nav-tabs li a{
     color: rgb(0, 81, 255);   
 }
+.nav-tab{
+    display: flex;
+}
+.tab{
+    width: 33%;
+    height: 50px;
+    display: flex;
+    color: rgb(0, 81, 255); 
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
 .forms .container{
     margin-top: 1.6rem;
 }
@@ -34,6 +48,7 @@ tab .forms
     display: flex;
     /* margin-bottom: 0.5rem; */
     margin-top: 0.5rem;
+    align-items: center;
 }
 .tab-one{
     display: block;
@@ -46,6 +61,9 @@ tab .forms
 }
 .form-labels{
     width: 40%;  
+}
+#group{
+    display: none;
 }
 /*button*/
 .form-btn{
@@ -62,26 +80,39 @@ justify-content:flex-end;
 /* other products */
 .title{
     padding: 5px;
-    background-color: bisque;
+    text-align: center;
+    background-color: rgb(219, 224, 248);
     width: 100%;
+    
+}
+.title h4{
+    padding-top:9px;
 }
 
 .products{
-    border: 1px solid rgb(233, 220, 220);
+    border: 1px solid rgb(236, 236, 241);
     color: #252525;
+    margin-bottom: 40px;
 }
 .products .item{
-    font-weight: 600;
+    font-weight: 540;
 }
-.products ul li{
+.products ul li , .student-list ul li{
     list-style: circle;
     margin-left: 2rem;
 }
 ::marker{
     color: #30c1fd;
 }
+.hero-row{
+    display: flex;
+justify-content: space-between;
+}
+.forms-lg{
+width: 70%;
+}
 /* mobile */
-@media (max-width: 991px) {
+@media (max-width: 1000px) {
     #navbar .container{
         flex-direction: column;
         justify-content: center; 
@@ -100,5 +131,8 @@ justify-content:flex-end;
     }
     .logo img{
         height: 45px;
+    }
+    .row-nav{
+        flex-direction: column-reverse;
     }
     }

@@ -35,32 +35,32 @@
       <nav class="main-nav float-right d-none d-lg-block">
         <ul>
           <li class="active"><a href="./index.html">Home</a></li>
-          <li><a href="#about">About Us</a></li>        
+          <li><a href="about.html">About Us</a></li>        
           <li class="drop-down"><a href="#">Our Products<span><svg id="dropdown-icon" width="16" height="16" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg" fill="currentColor"><path fill-rule="evenodd" clip-rule="evenodd" d="M7.976 10.072l4.357-4.357.62.618L8.284 11h-.618L3 6.333l.619-.618 4.357 4.357z"/></svg></span></a>
             <ul>
-              <li><a href="https://bimarahisi.ke/motor">Motor Insurance</a></li>
-              <li class="drop-down"><a href="https://bimarahisi.ke/">Micro Insurance</a>
+              <li><a href="motorinsurance.html">Motor Insurance</a></li>
+              <li class="drop-down"><a href="microhealth.html">Micro Insurance</a>
                 <ul>
-                  <li><a href="https://bimarahisi.ke/hospitalcash">Hospital Cash</a></li>
-                  <li><a href="https://bimarahisi.ke/educateprotect">Educate Protect</a></li>
-                  <li><a href="https://bimarahisi.ke/internaltravel">Internal Travel</a></li>
-                  <li><a href="https://bimarahisi.ke/student">Student Insurance</a></li>              
+                  <li><a href="hospitalcash.html">Hospital Cash</a></li>
+                  <li><a href="educateprotect.html">Educate Protect</a></li>
+                  <li><a href="internal.html">Internal Travel</a></li>
+                  <li><a href="student.html">Student Insurance</a></li>              
                 </ul>
               </li>
-              <li><a href="https://bimarahisi.ke/travel">Travel Insurance</a></li>
-              <li class="drop-down"><a href="https://bimarahisi.ke/">Personal Cover</a>
+              <li><a href="travel.html">Travel Insurance</a></li>
+              <li class="drop-down"><a href="personal.html">Personal Cover</a>
                 <ul>
-                  <li><a href="https://bimarahisi.ke/personal">Personal Accident</a></li>
-                  <li><a href="https://bimarahisi.ke/grouppersonal">Group Personal Accident</a></li>          
+                  <li><a href="personal.html">Personal Accident</a></li>
+                  <li><a href="personal.html">Group Personal Accident</a></li>          
                 </ul>
               </li>
-              <li class="drop-down"><a href="https://bimarahisi.ke/">Health Insurance</a>
+              <li class="drop-down"><a href="healthcover.html">Health Insurance</a>
                 <ul>
-                  <li><a href="https://bimarahisi.ke/health">Health Insurance</a></li>
-                  <li><a href="https://bimarahisi.ke/healthmicro">Micro Health cover</a></li>                          
+                  <li><a href="healthcover.html">Health Insurance</a></li>
+                  <li><a href="microhealth.html">Micro Health cover</a></li>                          
                 </ul>
               </li> 
-              <li><a href="https://bimarahisi.ke/agriculture">Agricultural Cover</a></li>
+              <li><a href="agric.html">Agricultural Cover</a></li>
             </ul>
           </li>
           <li><a href="#contact">Contact Us</a></li>
@@ -73,19 +73,33 @@
   <section id="hero">
     <div class="container">
         <div class="forms">
-            <div class="tabular-nav">
+          <div class="nav-tab tabular-nav">
+            <div id="tab-one" class="tab activated">Family</div>
+            <div id="tab-two" class="tab">Children</div>
+            <div id="tab-three" class="tab">Student</div>
+        </div>
+            <!-- <div class="tabular-nav">
                 <ul class="nav nav-tabs">
                     <li  style="width: 33%;" class="nav-item "><a id="tab-one" class="nav-link activated" href="#">Family</a></li>
                     <li style="width: 33%; "class="nav-item"><a id="tab-two" class="nav-link" href="#">Children</a></li>
                     <li style="width: 33%; text-align: center;" class="nav-item"><a id="tab-three" class="nav-link" href="#">Student</a></li>
                 </ul>
-            </div>
+            </div> -->
             <div class="container">
                 <form class="tab-one" action="">
                 
                   <div class="form-fields">
-                    <input type="radio" name="" id="">
-                    <input type="radio" name="" id="">
+                    <div style="display: flex; justify-content: space-between;" role="radiogroup">
+                      <div>
+                        <input role="radio" type="radio" name="trip" id="Single">
+                        <label for="Single">Single Trip</label>
+                      </div>
+                     <div style="margin-left: 5rem;">
+                      <input role="radio" aria-checked="false" type="radio" name="trip" id="annual">
+                      <label for="annual">Annual Trip</label>
+                     </div>
+                      
+                    </div>
                  </div>
                  <div class="form-fields">
                     <span class="form-labels">Date of Birth</span>
@@ -95,23 +109,43 @@
                     <span class="form-labels">With Spouse?</span>
                  <input class="form-control" type="text">
                  </div>
-                 <div class="form-fields">
-                    <span class="form-labels">Departure</span>
-                 <input class="form-control" type="text">
-                 </div>
-                 <div class="form-fields">
-                     <span class="form-labels">Return</span>
-                  <input class="form-control" type="date" name="" id="">
+                
+                  <div style="display: flex; align-items: center;" class="dates">
+                    <div style="width: 70%;">
+                      <div class="form-fields">
+                        <span style="margin: 0; padding: 0; width: 40%;" class="form-labels">Departure</span>
+                        <span style="width: 50%;">
+                          <input class="form-control" type="date" name="" id="">
+                         </span>
+                     </div>
+                     <div class="form-fields">
+                         <span style="margin: 0; padding: 0; width: 40%;" class="form-labels">Return</span>
+                         <span style="width: 50%;">
+                          <input class="form-control" type="date" name="" id="">
+                         </span>
+                     
+                      </div>
+                    </div>
+                   
+                    <span style="width: 30%;">
+                      <input class="form-control" type="number" placeholder="+/- 0 Day">
+                    </span>
                   </div>
+
                   <div class="form-fields">
-                     <span class="form-labels">Adults</span>
-                  <select class="form-control" name="" id="">
+                    <span style="margin: 0; padding: 0; width: 28%;" class="form-labels">Adults</span>
+                    <span style="width: 20%;" class="">
+                      <input class="form-control" type="number" placeholder="2">
+                    </span>
                      
                   </select>
                   </div>
                  <div class="form-fields">
-                    <span class="form-labels">Children</span>
-                 <input class="form-control" type="text">(0-17 Years)
+                    <span style="margin: 0; padding: 0; width: 28%;" class="form-labels">Children</span>
+                    <span style="width: 20%;" class="">
+                      <input class="form-control" type="number" placeholder="0">
+                    </span>(0-17 Years)
+                 
                  </div>
                  <div class="form-fields">
                     <span class="form-labels">From</span>
@@ -144,19 +178,43 @@
                 </form>
     <!-- Comprehensive form -->
                 <form class="tab-two" action="">
-                    
+                  <div class="form-fields">
+                    <div style="display: flex; justify-content: space-between;" role="radiogroup">
+                      <div>
+                        <input role="radio" type="radio" name="trip" id="Single">
+                        <label for="Single">Single Trip</label>
+                      </div>
+                     <div style="margin-left: 5rem;">
+                      <input role="radio" aria-checked="false" type="radio" name="trip" id="annual">
+                      <label for="annual">Annual Trip</label>
+                     </div>
+                      
+                    </div>
+                 </div>
                   <div class="form-fields">
                     <span class="form-labels">Date of Birth</span>
                  <input class="form-control" type="text">
                  </div>
                  <div class="form-fields">
-                    <span class="form-labels">Departure</span>
-                 <input class="form-control" type="text">
-                 </div>
+                  <span style="margin: 0; padding: 0; width: 28%;" class="form-labels">Departure</span>
+                  <span style="width: 35%;" class="">
+                    <input class="form-control" type="date" placeholder="0">
+                  </span>
+                  <span style="width: 25%; margin-left: 10px;" class="">
+                    <input class="form-control" type="time" placeholder="0">
+                  </span>
+               
+               </div>
                  <div class="form-fields">
-                    <span class="form-labels">Return</span>
-                 <input class="form-control" type="email">
-                 </div>
+                  <span style="margin: 0; padding: 0; width: 28%;" class="form-labels">Return</span>
+                  <span style="width: 35%;" class="">
+                    <input class="form-control" type="date" placeholder="0">
+                  </span>
+                  <span style="width: 25%; margin-left: 10px;" class="">
+                    <input class="form-control" type="time" placeholder="0">
+                  </span>
+               
+               </div>
                  <div class="form-fields">
                     <span class="form-labels">From</span>
                  <select class="form-control" name="" id="">
@@ -197,19 +255,43 @@
                 </form>
     <!-- other forms -->
     <form class="tab-three" action="">
-                    
+      <div class="form-fields">
+        <div style="display: flex; justify-content: space-between;" role="radiogroup">
+          <div>
+            <input role="radio" type="radio" name="trip" id="Single">
+            <label for="Single">Single Trip</label>
+          </div>
+         <div style="margin-left: 5rem;">
+          <input role="radio" aria-checked="false" type="radio" name="trip" id="annual">
+          <label for="annual">Annual Trip</label>
+         </div>
+          
+        </div>
+     </div>             
       <div class="form-fields">
         <span class="form-labels">Date of Birth</span>
      <input class="form-control" type="text">
      </div>
      <div class="form-fields">
-        <span class="form-labels">Departure</span>
-     <input class="form-control" type="text">
-     </div>
+      <span style="margin: 0; padding: 0; width: 28%;" class="form-labels">Departure</span>
+      <span style="width: 35%;" class="">
+        <input class="form-control" type="date" placeholder="0">
+      </span>
+      <span style="width: 25%; margin-left: 10px;" class="">
+        <input class="form-control" type="time" placeholder="0">
+      </span>
+   
+   </div>
      <div class="form-fields">
-        <span class="form-labels">Return</span>
-     <input class="form-control" type="email">
-     </div>
+      <span style="margin: 0; padding: 0; width: 28%;" class="form-labels">Return</span>
+      <span style="width: 35%;" class="">
+        <input class="form-control" type="date" placeholder="0">
+      </span>
+      <span style="width: 25%; margin-left: 10px;" class="">
+        <input class="form-control" type="time" placeholder="0">
+      </span>
+   
+   </div>
      <div class="form-fields">
         <span class="form-labels">From</span>
      <select class="form-control" name="" id="">
@@ -268,55 +350,61 @@
                         <div class="item">
                             Student insurance
                             <ul>
-                                <li>Get quote</li>
+                                <li><a href="student.html">Get quote</a> </li>
                             </ul>
                         </div>
                         <div class="item">
                             personal cover
                             <ul>
-                                <li>Get quote</li>
+                                <li><a href="personal.html"> Get quote</a></li>
                             </ul>
                         </div>
                         <div class="item">
                             Travel
                             <ul>
-                                <li>Get quote</li>
+                                <li><a href="travel.html"> Get quote</a></li>
                             </ul>
                         </div>
                         <div class="item">
                             Hospital cash
                             <ul>
-                                <li>Get quote</li>
+                                <li><a href="hospitalcash.html"> Get quote</a></li>
                             </ul>
                         </div>
                         <div class="item">
                             Educate Protect
                             <ul>
-                                <li>Get quote</li>
+                                <li><a href="educateprotect.html"> Get quote</a></li>
                             </ul>
                         </div>
                         <div class="item">
                            Agricultural cover
                             <ul>
-                                <li>Get quote</li>
+                                <li><a href="agric.html"> Get quote</a></li>
                             </ul>
                         </div>
+                        <div class="item">
+                          see all products
+                          <ul>
+                              <li><a href="allproducts.html">See all</a></li>
+                          </ul>
+                      </div>
                     </div>
                 </div>
                 
                
             </div>
             
-            <div class="col-lg-4">
-              <h4>Travel Insurance</h4>
-              <h6>Fast and Eazy insurance</h6>
+            <div class="wow bounceInUp col-lg-4">
+              <h3 style="margin: 0;padding: 0;">Travel Insurance</h3>
+              <h5>Fast and Eazy insurance</h5>
                 <p>
                   Kenya’s award-winning travel Insurance provider. We provide Annual, Single Trip, Local trips and Backpacker travel insurance to suit different trips abroad, Visa requirements, budgets and needs. Travel Medical Insurance protects you in the event of an illness or injury when traveling outside of Kenya or travelling locally.
                 </p>
             </div>
-            <div class="col-lg-4">
-              It provides key medical benefits in case of an emergency. Traveling is an exciting experience, but unpredictable illnesses and accidents can happen. Even worse, the resulting medical bills can be overwhelming. Annual travel insurance provides a Worldwide cover. No matter what holiday or trip you have planned abroad, we will help you stay protected. Get a quick travel insurance quote below now.
-            <a href="#">Read more</a>
+            <div class="wow bounceInUp col-lg-4">
+              It provides key medical benefits in case of an emergency. Traveling is an exciting experience, but unpredictable illnesses and accidents can happen. Even worse, the resulting medical bills can be overwhelming. Annual travel insurance provides a Worldwide cover. No matter what holiday or trip you have planned abroad, we will help you stay protected. Get a quick travel insurance quote below now...<br>
+            <a class="btn btn-info" href="#">Read more</a>
             </div>
         </div>
 

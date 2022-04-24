@@ -7,14 +7,14 @@
   <meta content="Fast and easy online insurance" name="description">
   <meta content="Bimarahisi" name="author">
   <!-- Google Fonts -->
-  <link href="./Fast and Easy Insurance_Bima Rahisi_files/css" rel="stylesheet">
+  <!-- <link href="./Fast and Easy Insurance_Bima Rahisi_files/css" rel="stylesheet"> -->
   <!-- Bootstrap CSS File -->
   <link href="./Fast and Easy Insurance_Bima Rahisi_files/bootstrap.min.css" rel="stylesheet">
   <!-- Libraries CSS Files -->
-  <link href="./Fast and Easy Insurance_Bima Rahisi_files/font-awesome.min.css" rel="stylesheet">
+  <!-- <link href="./Fast and Easy Insurance_Bima Rahisi_files/font-awesome.min.css" rel="stylesheet"> -->
   <link href="./Fast and Easy Insurance_Bima Rahisi_files/animate.min.css" rel="stylesheet">
-  <link href="./Fast and Easy Insurance_Bima Rahisi_files/ionicons.min.css" rel="stylesheet">
-  <link href="./Fast and Easy Insurance_Bima Rahisi_files/owl.carousel.min.css" rel="stylesheet">
+  <!-- <link href="./Fast and Easy Insurance_Bima Rahisi_files/ionicons.min.css" rel="stylesheet"> -->
+  <!-- <link href="./Fast and Easy Insurance_Bima Rahisi_files/owl.carousel.min.css" rel="stylesheet"> -->
   <link href="./Fast and Easy Insurance_Bima Rahisi_files/lightbox.min.css" rel="stylesheet">
   <!-- Main Stylesheet File -->
   <link href="./Fast and Easy Insurance_Bima Rahisi_files/style.css" rel="stylesheet">
@@ -35,32 +35,32 @@
       <nav class="main-nav float-right d-none d-lg-block">
         <ul>
           <li class="active"><a href="./index.html">Home</a></li>
-          <li><a href="#about">About Us</a></li>        
+          <li><a href="about.html">About Us</a></li>        
           <li class="drop-down"><a href="#">Our Products<span><svg id="dropdown-icon" width="16" height="16" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg" fill="currentColor"><path fill-rule="evenodd" clip-rule="evenodd" d="M7.976 10.072l4.357-4.357.62.618L8.284 11h-.618L3 6.333l.619-.618 4.357 4.357z"/></svg></span></a>
             <ul>
-              <li><a href="https://bimarahisi.ke/motor">Motor Insurance</a></li>
+              <li><a href="motorinsurance.html">Motor Insurance</a></li>
               <li class="drop-down"><a href="https://bimarahisi.ke/">Micro Insurance</a>
                 <ul>
-                  <li><a href="https://bimarahisi.ke/hospitalcash">Hospital Cash</a></li>
-                  <li><a href="https://bimarahisi.ke/educateprotect">Educate Protect</a></li>
-                  <li><a href="https://bimarahisi.ke/internaltravel">Internal Travel</a></li>
-                  <li><a href="https://bimarahisi.ke/student">Student Insurance</a></li>              
+                  <li><a href="hospitalcash.html">Hospital Cash</a></li>
+                  <li><a href="educateprotect.html">Educate Protect</a></li>
+                  <li><a href="internal.html">Internal Travel</a></li>
+                  <li><a href="student.html">Student Insurance</a></li>              
                 </ul>
               </li>
-              <li><a href="https://bimarahisi.ke/travel">Travel Insurance</a></li>
-              <li class="drop-down"><a href="https://bimarahisi.ke/">Personal Cover</a>
+              <li><a href="travel.html">Travel Insurance</a></li>
+              <li class="drop-down"><a href="personal.html">Personal Cover</a>
                 <ul>
-                  <li><a href="https://bimarahisi.ke/personal">Personal Accident</a></li>
-                  <li><a href="https://bimarahisi.ke/grouppersonal">Group Personal Accident</a></li>          
+                  <li><a href="personal.html">Personal Accident</a></li>
+                  <li><a href="personal.html">Group Personal Accident</a></li>          
                 </ul>
               </li>
-              <li class="drop-down"><a href="https://bimarahisi.ke/">Health Insurance</a>
+              <li class="drop-down"><a href="healthcover.html">Health Insurance</a>
                 <ul>
-                  <li><a href="https://bimarahisi.ke/health">Health Insurance</a></li>
-                  <li><a href="https://bimarahisi.ke/healthmicro">Micro Health cover</a></li>                          
+                  <li><a href="healthcover.html">Health Insurance</a></li>
+                  <li><a href="microhealth.html">Micro Health cover</a></li>                          
                 </ul>
               </li> 
-              <li><a href="https://bimarahisi.ke/agriculture">Agricultural Cover</a></li>
+              <li><a href="agric.html">Agricultural Cover</a></li>
             </ul>
           </li>
           <li><a href="#contact">Contact Us</a></li>
@@ -73,13 +73,18 @@
   <section id="hero">
     <div class="container">
         <div class="forms">
-            <div class="tabular-nav">
+          <div class="nav-tab tabular-nav">
+            <div id="tab-one" class="tab activated">Third Party</div>
+            <div id="tab-two" class="tab">Comprehensive</div>
+            <div id="tab-three" class="tab">Other</div>
+        </div>
+            <!-- <div class="tabular-nav">
                 <ul class="nav nav-tabs">
                     <li  style="width: 33%;" class="nav-item "><a id="tab-one" class="nav-link activated" href="#">Third Party</a></li>
                     <li style="width: 33%; "class="nav-item"><a id="tab-two" class="nav-link" href="#">Comprehensive</a></li>
                     <li style="width: 33%; text-align: center;" class="nav-item"><a id="tab-three" class="nav-link" href="#">Other</a></li>
                 </ul>
-            </div>
+            </div> -->
             <div class="container">
                 <form class="tab-one" action="">
                 
@@ -146,6 +151,7 @@
                     <div class="form-fields">
                        <span class="form-labels">Model</span>
                     <select class="form-control" name="" id="">
+                      <option value="">Allion</option>
                        
                     </select>
                     </div>
@@ -156,7 +162,12 @@
                     </div>
                     <div class="form-fields">
                        <span class="form-labels">Year</span>
-                    <input class="form-control" type="text">
+                       <select class="form-control" name="" id="">
+                        <option value="">2022</option>
+                        <option value="">2021</option>
+                        <option value="">2020</option>
+                         
+                      </select>
                     </div>
                     <div class="form-fields">
                        <span class="form-labels">Est Value</span>
@@ -181,63 +192,73 @@
 
 <section>
     <div class="container">
-        <div class="row ">
-            <div class="col-lg-4">
+        <div class="row">
+            <div class="wow bounceInUp col-lg-4">
                 <div class="products">
                     <div class=" title">
-                        <h3>Other Products</h3>
+                        <h4>Other Products</h4>
                     </div>
                     <div class="container">
                         <div class="item">
                             Student insurance
                             <ul>
-                                <li>Get quote</li>
+                                <li><a href="student.html">Get quote</a> </li>
                             </ul>
                         </div>
                         <div class="item">
                             personal cover
                             <ul>
-                                <li>Get quote</li>
+                                <li><a href="personal.html">Get quote</a></li>
                             </ul>
                         </div>
                         <div class="item">
-                            Travel
+                            Internal travel
                             <ul>
-                                <li>Get quote</li>
+                                <li><a href="internal.html">Get quote</a> </li>
                             </ul>
                         </div>
                         <div class="item">
                             Hospital cash
                             <ul>
-                                <li>Get quote</li>
+                                <li><a href="hospitalcash.html">Get quote</a> </li>
                             </ul>
                         </div>
                         <div class="item">
                             Educate Protect
                             <ul>
-                                <li>Get quote</li>
+                                <li><a href="educateprotect.html">Get quote</a></li>
                             </ul>
                         </div>
                         <div class="item">
                            Agricultural cover
                             <ul>
-                                <li>Get quote</li>
+                                <li><a href="agric.html">Get quote</a></li>
                             </ul>
                         </div>
+                        <div class="item">
+                          see all products
+                          <ul>
+                              <li><a href="allproducts.html">See more</a></li>
+                          </ul>
+                      </div>
                     </div>
                 </div>
                 
                
             </div>
             
-            <div class="col-lg-4">
+            <div class="wow bounceInUp col-lg-4">
+              <div class="protitle">
+                <h3 style="margin: 0;padding: 0;">Motor/Car Insurance</h3>
+                <h5>Fast and Easy Insurance</h5>
+              </div>
                 <p>
                     Car insurance ensures that you do not suffer a setback/break the bank financially in case of an accident. but remember, it is not a one-size-fits-all requirement. We work with you to Choose the most suitable plan for you and include the benefits that you would like to have. It us also a legal requirement to have car insurance in Kenya. we just make it RAHISI!!
                 </p>
             </div>
-            <div class="col-lg-4">
+            <div style="padding-bottom: 30px;" class="wow bounceInUp col-lg-4">
                 We offer the following 3 types of Motor Insurance cover: Third Party, Thirds party fire and theft and Comprehensive ...
-            <a href="#">Read more</a>
+            <br><a class="btn btn-info" href="#">Read more</a>
             </div>
         </div>
 
@@ -261,13 +282,13 @@
           </a><div class="col-lg-2 col-md-6 footer-links"><a href="tel:+254703065065">
             <h4>Useful Links</h4>
             </a><ul><a href="tel:+254703065065">
-              </a><li><a href="tel:+254703065065"></a><a href="https://bimarahisi.ke/index.php">Home</a></li>
-              <li><a href="https://bimarahisi.ke/motor.php">Motor Insurance</a></li>
+              </a><li><a href="tel:+254703065065"></a><a href="index.html">Home</a></li>
+              <li><a href="motorinsurance.html">Motor Insurance</a></li>
           
-              <li><a href="https://bimarahisi.ke/travel.php">Travel Insurance</a></li>
-                  <li><a href="https://bimarahisi.ke/personal.php">Personal Cover</a></li>
-                  <li><a href="https://bimarahisi.ke/internaltravel.php">Internal Travel</a></li>
-                  <li><a href="https://bimarahisi.ke/health.php">Health Insurance</a></li>
+              <li><a href="travel.html">Travel Insurance</a></li>
+                  <li><a href="personal.html">Personal Cover</a></li>
+                  <li><a href="internal.html">Internal Travel</a></li>
+                  <li><a href="healthcover.html">Health Insurance</a></li>
              
             </ul>
           </div>
@@ -283,17 +304,17 @@
 
             <div class="social-links">
 
-              <a class="twitter-icon" href="https://bimarahisi.ke/#"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-twitter" viewBox="0 0 16 16">
+              <a class="twitter-icon" href="#"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-twitter" viewBox="0 0 16 16">
                 <path d="M5.026 15c6.038 0 9.341-5.003 9.341-9.334 0-.14 0-.282-.006-.422A6.685 6.685 0 0 0 16 3.542a6.658 6.658 0 0 1-1.889.518 3.301 3.301 0 0 0 1.447-1.817 6.533 6.533 0 0 1-2.087.793A3.286 3.286 0 0 0 7.875 6.03a9.325 9.325 0 0 1-6.767-3.429 3.289 3.289 0 0 0 1.018 4.382A3.323 3.323 0 0 1 .64 6.575v.045a3.288 3.288 0 0 0 2.632 3.218 3.203 3.203 0 0 1-.865.115 3.23 3.23 0 0 1-.614-.057 3.283 3.283 0 0 0 3.067 2.277A6.588 6.588 0 0 1 .78 13.58a6.32 6.32 0 0 1-.78-.045A9.344 9.344 0 0 0 5.026 15z"/>
               </svg></a>
-              <a href="https://bimarahisi.ke/#" class="facebook"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-facebook" viewBox="0 0 16 16">
+              <a href="#" class="facebook"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-facebook" viewBox="0 0 16 16">
                 <path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z"/>
               </svg></a>
-              <a href="https://bimarahisi.ke/#" class="instagram"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-instagram" viewBox="0 0 16 16">
+              <a href="#" class="instagram"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-instagram" viewBox="0 0 16 16">
                 <path d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.917 3.917 0 0 0-1.417.923A3.927 3.927 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.916 3.916 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.926 3.926 0 0 0-.923-1.417A3.911 3.911 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0h.003zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599.28.28.453.546.598.92.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.47 2.47 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.478 2.478 0 0 1-.92-.598 2.48 2.48 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233 0-2.136.008-2.388.046-3.231.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92.28-.28.546-.453.92-.598.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045v.002zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92zm-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217zm0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334z"/>
               </svg></a>
-              <a href="https://bimarahisi.ke/#" class="google-plus"><svg xmlns="http://www.w3.org/2000/svg" fill="white" width="24" height="24" viewBox="0 0 24 24"><path d="M7 11v2.4h3.97c-.16 1.029-1.2 3.02-3.97 3.02-2.39 0-4.34-1.979-4.34-4.42 0-2.44 1.95-4.42 4.34-4.42 1.36 0 2.27.58 2.79 1.08l1.9-1.83c-1.22-1.14-2.8-1.83-4.69-1.83-3.87 0-7 3.13-7 7s3.13 7 7 7c4.04 0 6.721-2.84 6.721-6.84 0-.46-.051-.81-.111-1.16h-6.61zm0 0 17 2h-3v3h-2v-3h-3v-2h3v-3h2v3h3v2z" fill-rule="evenodd" clip-rule="evenodd"/></svg></a>
-              <a href="https://bimarahisi.ke/#" class="linkedin"><svg xmlns="http://www.w3.org/2000/svg" fill="white" width="14" height="14" viewBox="0 0 24 24"><path d="M4.98 3.5c0 1.381-1.11 2.5-2.48 2.5s-2.48-1.119-2.48-2.5c0-1.38 1.11-2.5 2.48-2.5s2.48 1.12 2.48 2.5zm.02 4.5h-5v16h5v-16zm7.982 0h-4.968v16h4.969v-8.399c0-4.67 6.029-5.052 6.029 0v8.399h4.988v-10.131c0-7.88-8.922-7.593-11.018-3.714v-2.155z"/></svg></a>
+              <a href="#" class="google-plus"><svg xmlns="http://www.w3.org/2000/svg" fill="white" width="24" height="24" viewBox="0 0 24 24"><path d="M7 11v2.4h3.97c-.16 1.029-1.2 3.02-3.97 3.02-2.39 0-4.34-1.979-4.34-4.42 0-2.44 1.95-4.42 4.34-4.42 1.36 0 2.27.58 2.79 1.08l1.9-1.83c-1.22-1.14-2.8-1.83-4.69-1.83-3.87 0-7 3.13-7 7s3.13 7 7 7c4.04 0 6.721-2.84 6.721-6.84 0-.46-.051-.81-.111-1.16h-6.61zm0 0 17 2h-3v3h-2v-3h-3v-2h3v-3h2v3h3v2z" fill-rule="evenodd" clip-rule="evenodd"/></svg></a>
+              <a href="#" class="linkedin"><svg xmlns="http://www.w3.org/2000/svg" fill="white" width="14" height="14" viewBox="0 0 24 24"><path d="M4.98 3.5c0 1.381-1.11 2.5-2.48 2.5s-2.48-1.119-2.48-2.5c0-1.38 1.11-2.5 2.48-2.5s2.48 1.12 2.48 2.5zm.02 4.5h-5v16h5v-16zm7.982 0h-4.968v16h4.969v-8.399c0-4.67 6.029-5.052 6.029 0v8.399h4.988v-10.131c0-7.88-8.922-7.593-11.018-3.714v-2.155z"/></svg></a>
             </div>
 
           </div>
@@ -331,7 +352,7 @@
           Licensing information: https://bootstrapmade.com/license/
           Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/buy/?theme=NewBiz
         -->
-        Designed by <a href="https://bimarahisi.ke/#">Bimarahisi</a>
+        Designed by <a href="#">Bimarahisi</a>
       </div>
     </div>
   </footer>  <!-- #footer -->
@@ -339,7 +360,7 @@
 go to top button
 ============================== -->
 
-  <a href="https://bimarahisi.ke/#" class="back-to-top"> <div class="go-top">
+  <a href="#" class="back-to-top"> <div class="go-top">
     <svg
       width="16"
       height="16"
@@ -364,10 +385,10 @@ go to top button
   <script src="./Fast and Easy Insurance_Bima Rahisi_files/easing.min.js"></script>
   <script src="./Fast and Easy Insurance_Bima Rahisi_files/mobile-nav.js"></script>
   <script src="./Fast and Easy Insurance_Bima Rahisi_files/wow.min.js"></script>
-  <script src="./Fast and Easy Insurance_Bima Rahisi_files/waypoints.min.js"></script>
-  <script src="./Fast and Easy Insurance_Bima Rahisi_files/counterup.min.js"></script>
-  <script src="./Fast and Easy Insurance_Bima Rahisi_files/owl.carousel.min.js"></script>
-  <script src="./Fast and Easy Insurance_Bima Rahisi_files/isotope.pkgd.min.js"></script>
+  <!-- <script src="./Fast and Easy Insurance_Bima Rahisi_files/waypoints.min.js"></script> -->
+  <!-- <script src="./Fast and Easy Insurance_Bima Rahisi_files/counterup.min.js"></script> -->
+  <!-- <script src="./Fast and Easy Insurance_Bima Rahisi_files/owl.carousel.min.js"></script> -->
+  <!-- <script src="./Fast and Easy Insurance_Bima Rahisi_files/isotope.pkgd.min.js"></script> -->
   <script src="./Fast and Easy Insurance_Bima Rahisi_files/lightbox.min.js"></script>
   <!-- Contact Form JavaScript File -->
   <script src="./Fast and Easy Insurance_Bima Rahisi_files/contactform.js"></script>

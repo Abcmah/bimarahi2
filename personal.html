@@ -34,7 +34,7 @@
       </div>
       <nav class="main-nav float-right d-none d-lg-block">
         <ul>
-          <li class="active"><a href="index.html">Home</a></li>
+          <li><a href="index.html">Home</a></li>
           <li><a href="about.html">About Us</a></li> 
           <li class="drop-down"><a href="#">Our Products<span><svg id="dropdown-icon" width="16" height="16" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg" fill="currentColor"><path fill-rule="evenodd" clip-rule="evenodd" d="M7.976 10.072l4.357-4.357.62.618L8.284 11h-.618L3 6.333l.619-.618 4.357 4.357z"/></svg></span></a>
             <ul>
@@ -50,8 +50,8 @@
               <li><a href="./travel.html">Travel Insurance</a></li>
               <li class="drop-down"><a href="./personal.html">Personal Cover</a>
                 <ul>
-                  <li><a href="./personal.html">Personal Accident</a></li>
-                  <li><a href="./personal.html">Group Personal Accident</a></li>          
+                  <li class="active"><a href="./personal.html">Personal Accident</a></li>
+                  <li class="active"><a href="./personal.html">Group Personal Accident</a></li>          
                 </ul>
               </li>
               <li class="drop-down"><a href="./healthcover.html">Health Insurance</a>
@@ -146,7 +146,7 @@
                <input class="form-control" type="text">
                </div>
                <div class="form-fields  form-btn">
-                   <button class="btn btn-info" type="submit">Next  ></button>
+                   <button class="btn btn-info pop" type="button">Next  ></button>
                 </div>
                  
               </form>
@@ -170,7 +170,7 @@
                   <input class="form-control" type="text">
                </div>
                <div class="form-fields  form-btn">
-                   <button class="btn btn-info" type="submit">Next  ></button>
+                   <button class="btn btn-info pop" type="button">Next  ></button>
                 </div>
               </form>
   <!-- other forms -->
@@ -187,7 +187,40 @@
 
     </div>
 </section>
-
+    <!-- pup up   -->
+    <div style="display: flex; position: fixed; left: 0;" class="box-model box-model-closed">
+      <div class="model">
+        <span id="close-model">&times;</span>
+          <div class="quote-title f-title">
+            <h2>Choose a Payment Method</h2>
+          </div>
+          <div class="quote-form">
+            <form action="" method="post">
+            <select class="form-control" name="quotes" id="quote-select">
+              <option value="0">--Choose--</option>
+              <option value="M-PESA">M-PESA</option>
+              <option value="Airtel Money">Airtel Money</option>
+            </select>
+            <div class="msg"></div>
+            <div class="number-field wow fadeInUp">
+            <span class="lb"></span>
+            <input class="form-control" type="number" name="" id="" required>
+          </div>
+          </form>
+          </div>
+          <div class="quote-btn">
+  
+            <button type="submit" class="button buttn bt">Submit</button>
+          </div>
+      
+      
+      </div>
+      <style>
+      
+      </style>
+    </div>
+  
+    <!-- end pop up -->
 <section>
   <div class="container">
       <div class="row ">
@@ -195,9 +228,9 @@
           <div class="wow bounceInUp col-lg-4">
             <div class="protitle">
               <h3 style="margin: 0;padding: 0;">Personal Accident Insurance</h3>
-              <h5>Fast and Easy Insurance</h5>
+              <h5 style='color: rgb(73, 87, 138);'>Fast and Easy Insurance</h5>
             </div>
-              <p>
+              <p class="about-text">
                 The Personal Accident cover provides a financial back up in the event of injuries or death resulting from an accident. Peace of Mind Life has its risks and some are unavoidable. The resulting financial strain can be minimized with the Personal Accident Cover. Get peace of mind for you and your loved ones.
 Accidental Death Benefit, Temporal Total Disability Benefit, Permanent Total Disability Benefit and Last Expense Benefit
               </p>
@@ -348,6 +381,7 @@ go to top button
   <script src="./Fast and Easy Insurance_Bima Rahisi_files/main.js"></script>
   <script src="./assests/js/index.js"></script>
   <script src="./assests/js/forms.js"></script>
+  <script src="./assests/js/popup.js"></script>
 <script>
   let tabne = document.querySelector('#tab-one');
   let taTwo = document.querySelector('#tab-two');

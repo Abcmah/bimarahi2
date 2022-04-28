@@ -27,14 +27,14 @@
   <!--==========================
   Header
   ============================-->
-   <header style="background: rgba(241, 243, 245, 0.753); backdrop-filter: blur(12px); -webkit-backdrop-filter: blur(12px);" id="header" class="fixed-top">
+   <header id="header" class="fixed-top">
     <div class="container">
       <div class="logo float-left">
         <a href="index.html" class="scrollto"><img src="./Fast and Easy Insurance_Bima Rahisi_files/logo3.png" alt="" class="img-fluid"></a>
       </div>
       <nav class="main-nav float-right d-none d-lg-block">
         <ul>
-          <li class="active"><a href="index.html">Home</a></li>
+          <li><a href="index.html">Home</a></li>
           <li><a href="about.html">About Us</a></li>
           <li class="drop-down"><a href="#">Our Products<span><svg id="dropdown-icon" width="16" height="16" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg" fill="currentColor"><path fill-rule="evenodd" clip-rule="evenodd" d="M7.976 10.072l4.357-4.357.62.618L8.284 11h-.618L3 6.333l.619-.618 4.357 4.357z"/></svg></span></a>
             <ul>
@@ -56,7 +56,7 @@
               </li>
               <li class="drop-down"><a href="./healthcover.html">Health Insurance</a>
                 <ul>
-                  <li><a href="./healthcover.html">Health Insurance</a></li>
+                  <li class="active"><a href="./healthcover.html">Health Insurance</a></li>
                   <li><a href="./microhealth.html">Micro Health cover</a></li>                          
                 </ul>
               </li> 
@@ -73,7 +73,7 @@
   <!-- ================================= -->
   <section id="hero">
     <div class="container">
-      <div class="row hero-row">
+      <div style="display: flex;" class="hero-row">
         <div class="col-lg-4">
           <div class="products">
               <div class=" title">
@@ -116,41 +116,38 @@
           
          
       </div>
-      <div class="forms">
+
+      <!-- <div class="container"></div> -->
+     
+          <div class="forms">
           <div class="nav-tab tabular-nav">
             <div id="tab-one" class="tab activated">Individual</div>
             <div id="tab-two" class="tab">Group</div>
             <div id="tab-three" class="tab">Other</div>
             </div>
-        <!-- <div class="tabular-nav">
-          <ul class="nav nav-tabs">
-              <li  style="width: 33%;" class="nav-item "><a id="tab-one" class="nav-link activated" href="#">Individual</a></li>
-              <li style="width: 33%; "class="nav-item"><a id="tab-two" class="nav-link" href="#">Group</a></li>
-              <li style="width: 33%; text-align: center;" class="nav-item"><a id="tab-three" class="nav-link" href="#">Other</a></li>
-          </ul>
-      </div> -->
+       
           <div class="container">
               <form class="tab-one" action="">
               
                 <div class="form-fields">
                   <span class="form-labels">Full Name</span>
-               <input class="form-control" type="text">
+               <input class="form-control" type="text" required>
                </div>
                <div class="form-fields">
                   <span class="form-labels">Mobile</span>
-               <input class="form-control" type="text">
+               <input class="form-control" type="number" required>
                </div>
                <div class="form-fields">
                   <span class="form-labels">Email</span>
-               <input class="form-control" type="text">
+               <input class="form-control" type="email" required>
                </div>
 
                <div class="form-fields">
                   <span class="form-labels">Age</span>
-               <input class="form-control" type="text">
+               <input class="form-control" type="number" required>
                </div>
                <div class="form-fields  form-btn">
-                   <button class="btn btn-info" type="submit">Next  ></button>
+                   <button class="btn btn-info pop" type="button">Next  ></button>
                 </div>
                  
               </form>
@@ -159,11 +156,11 @@
                   
                 <div class="form-fields">
                   <span class="form-labels">Organization</span>
-               <input class="form-control" type="text">
+               <input class="form-control" type="text" required>
                </div>
                <div class="form-fields">
                   <span class="form-labels">Telephone</span>
-               <input class="form-control" type="text">
+               <input class="form-control" type="text" required>
                </div>
                <div class="form-fields">
                   <span class="form-labels">Email</span>
@@ -171,10 +168,10 @@
                </div>
                <div class="form-fields">
                   <span class="form-labels">Employees</span>
-                  <input class="form-control" type="text">
+                  <input class="form-control" type="number" required>
                </div>
                <div class="form-fields  form-btn">
-                   <button class="btn btn-info" type="submit">Next  ></button>
+                   <button class="btn btn-info pop" type="button">Next  ></button>
                 </div>
               </form>
   <!-- other forms -->
@@ -184,6 +181,8 @@
      
   </form>
           </div>
+        </div>
+         
 
       </div>
 
@@ -194,7 +193,40 @@
 
     </div>
 </section>
+ <!-- pup up   -->
+ <div style="display: flex; position: fixed; left: 0;" class="box-model box-model-closed">
+  <div class="model">
+    <span id="close-model">&times;</span>
+      <div class="quote-title f-title">
+        <h2>Choose a Payment Method</h2>
+      </div>
+      <div class="quote-form">
+        <form action="" method="post">
+        <select class="form-control" name="quotes" id="quote-select">
+          <option value="0">--Choose--</option>
+          <option value="M-PESA">M-PESA</option>
+          <option value="Airtel Money">Airtel Money</option>
+        </select>
+        <div class="msg"></div>
+        <div class="number-field wow fadeInUp">
+        <span class="lb"></span>
+        <input class="form-control" type="number" name="" id="" required>
+      </div>
+      </form>
+      </div>
+      <div class="quote-btn">
 
+        <button type="submit" class="button buttn bt">Submit</button>
+      </div>
+  
+  
+  </div>
+  <style>
+  
+  </style>
+</div>
+
+<!-- end pop up -->
 <section>
   <div class="container">
       <div class="row ">
@@ -203,9 +235,9 @@
           <div class="wow col-lg-4">
             <div class="protitle">
               <h3 style="margin: 0;padding: 0;">Health Insurance</h3>
-              <h5>Fast and Easy Insurance</h5>
+              <h5 style='color: rgb(73, 87, 138);'>Fast and Easy Insurance</h5>
             </div>
-              <p>
+              <p class="about-text">
                 With Bima Rahisi we work with you to tailor make insurance to your need; Medical bills should not worry you. We have some great health cover plans with amazing perks, for everyone. Choose the one that suits your needs, medical insurance benefits with flexible packages for individuals, family, groups and the self-employed.
               </p>
           </div>
@@ -346,6 +378,7 @@ go to top button
   <script src="./Fast and Easy Insurance_Bima Rahisi_files/main.js"></script>
   <script src="./assests/js/index.js"></script>
   <script src="./assests/js/forms.js"></script>
+  <script src="./assests/js/popup.js"></script>
 
 
 

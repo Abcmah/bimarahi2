@@ -76,11 +76,13 @@ justify-content:flex-end;
     height: fit-content;
     margin-top:120px;
 }
-
+.number-field{
+    display: none;
+    visibility: visible;
+  }
 /* other products */
 .title{
     padding: 5px;
-    text-align: center;
     background-color: rgb(219, 224, 248);
     width: 100%;
     
@@ -111,6 +113,46 @@ justify-content: space-between;
 .forms-lg{
 width: 70%;
 }
+.form-img{
+    width: 60%;
+    animation: animate-image 2.0s infinite backwards;
+}
+/* animations */
+@keyframes animate-image{
+    0%{
+      transform: translateY(0px);
+    }
+    10%{
+      transform: translateY(2px);
+    }
+    20%{
+      transform: translateY(4px);
+    }
+    30%{
+      transform: translateY(6px);
+    }
+    40%{
+      transform: translateY(8px);
+    }
+    50%{
+      transform: translateY(10px);
+    }
+    60%{
+      transform: translateY(8px);
+    }
+    70%{
+      transform: translateY(6px);
+    }
+    80%{
+      transform: translateY(4px);
+    }
+    90%{
+      transform: translateY(2px);
+    }
+    100%{
+      transform: translateY(0px);
+    }
+  }
 /* mobile */
 @media (max-width: 1000px) {
     #navbar .container{
@@ -122,6 +164,11 @@ width: 70%;
         padding-top: 2rem;
         justify-content: center;
     }
+    .form-img{
+width: 100%;
+margin-bottom: 20px;
+    }
+   
     .forms{
         width: 100%;
 

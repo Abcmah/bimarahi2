@@ -7,14 +7,14 @@
   <meta content="Fast and easy online insurance" name="description">
   <meta content="Bimarahisi" name="author">
   <!-- Google Fonts -->
-  <link href="./Fast and Easy Insurance_Bima Rahisi_files/css" rel="stylesheet">
+  <!-- <link href="./Fast and Easy Insurance_Bima Rahisi_files/css" rel="stylesheet"> -->
   <!-- Bootstrap CSS File -->
   <link href="./Fast and Easy Insurance_Bima Rahisi_files/bootstrap.min.css" rel="stylesheet">
   <!-- Libraries CSS Files -->
-  <link href="./Fast and Easy Insurance_Bima Rahisi_files/font-awesome.min.css" rel="stylesheet">
+  <!-- <link href="./Fast and Easy Insurance_Bima Rahisi_files/font-awesome.min.css" rel="stylesheet"> -->
   <link href="./Fast and Easy Insurance_Bima Rahisi_files/animate.min.css" rel="stylesheet">
-  <link href="./Fast and Easy Insurance_Bima Rahisi_files/ionicons.min.css" rel="stylesheet">
-  <link href="./Fast and Easy Insurance_Bima Rahisi_files/owl.carousel.min.css" rel="stylesheet">
+  <!-- <link href="./Fast and Easy Insurance_Bima Rahisi_files/ionicons.min.css" rel="stylesheet"> -->
+  <!-- <link href="./Fast and Easy Insurance_Bima Rahisi_files/owl.carousel.min.css" rel="stylesheet"> -->
   <link href="./Fast and Easy Insurance_Bima Rahisi_files/lightbox.min.css" rel="stylesheet">
   <!-- Main Stylesheet File -->
   <link href="./Fast and Easy Insurance_Bima Rahisi_files/style.css" rel="stylesheet">
@@ -27,7 +27,7 @@
   <!--==========================
   Header
   ============================-->
-   <header style="background: rgba(241, 243, 245, 0.753); backdrop-filter: blur(12px); -webkit-backdrop-filter: blur(12px);" id="header" class="fixed-top">
+   <header id="header" class="fixed-top">
     <div class="container">
       <div class="logo float-left">
         <a href="index.html" class="scrollto"><img src="./Fast and Easy Insurance_Bima Rahisi_files/logo3.png" alt="" class="img-fluid"></a>
@@ -47,7 +47,7 @@
                   <li><a href="student.html">Student Insurance</a></li>              
                 </ul>
               </li>
-              <li><a href="travel.html">Travel Insurance</a></li>
+              <li class="active"><a href="travel.html">Travel Insurance</a></li>
               <li class="drop-down"><a href="personal.html">Personal Cover</a>
                 <ul>
                   <li><a href="personal.html">Personal Accident</a></li>
@@ -71,7 +71,7 @@
     </div>
   </header><!-- #header -->  <!-- #header -->
   <section id="hero">
-    <div class="container">
+    <div class="container hero-row">
         <div class="forms">
           <div class="nav-tab tabular-nav">
             <div id="tab-one" class="tab activated">Family</div>
@@ -89,9 +89,9 @@
                 <form class="tab-one" action="">
                 
                   <div class="form-fields">
-                    <div style="display: flex; justify-content: space-between;" role="radiogroup">
+                    <div style="display: flex; justify-content: space-between; margin: auto;" role="radiogroup">
                       <div>
-                        <input role="radio" type="radio" name="trip" id="Single">
+                        <input role="radio" aria-checked="true" type="radio" name="trip" id="Single">
                         <label for="Single">Single Trip</label>
                       </div>
                      <div style="margin-left: 5rem;">
@@ -103,7 +103,7 @@
                  </div>
                  <div class="form-fields">
                     <span class="form-labels">Date of Birth</span>
-                 <input class="form-control" type="text">
+                 <input class="form-control" type="date" required>
                  </div>
                  <div class="form-fields">
                     <span class="form-labels">With Spouse?</span>
@@ -115,27 +115,27 @@
                       <div class="form-fields">
                         <span style="margin: 0; padding: 0; width: 40%;" class="form-labels">Departure</span>
                         <span style="width: 50%;">
-                          <input class="form-control" type="date" name="" id="">
+                          <input class="form-control" type="date" name="" required>
                          </span>
                      </div>
                      <div class="form-fields">
                          <span style="margin: 0; padding: 0; width: 40%;" class="form-labels">Return</span>
                          <span style="width: 50%;">
-                          <input class="form-control" type="date" name="" id="">
+                          <input class="form-control" type="date" name="" required>
                          </span>
                      
                       </div>
                     </div>
                    
                     <span style="width: 30%;">
-                      <input class="form-control" type="number" placeholder="+/- 0 Day">
+                      <input class="form-control" type="number" placeholder="+/- 0 Day" >
                     </span>
                   </div>
 
                   <div class="form-fields">
                     <span style="margin: 0; padding: 0; width: 28%;" class="form-labels">Adults</span>
                     <span style="width: 20%;" class="">
-                      <input class="form-control" type="number" placeholder="2">
+                      <input class="form-control" type="number" placeholder="2" required>
                     </span>
                      
                   </select>
@@ -143,7 +143,7 @@
                  <div class="form-fields">
                     <span style="margin: 0; padding: 0; width: 28%;" class="form-labels">Children</span>
                     <span style="width: 20%;" class="">
-                      <input class="form-control" type="number" placeholder="0">
+                      <input class="form-control" type="number" placeholder="0" required>
                     </span>(0-17 Years)
                  
                  </div>
@@ -165,14 +165,14 @@
                  </div>
                  <div class="form-fields">
                     <span class="form-labels">Email</span>
-                 <input class="form-control" type="text">
+                 <input class="form-control" type="email">
                  </div>
                  <div class="form-fields">
                     <span class="form-labels">Phone</span>
-                 <input class="form-control" type="text">
+                 <input class="form-control" type="number">
                  </div>
                  <div class="form-fields  form-btn">
-                     <button class="btn btn-info" type="submit">Next  ></button>
+                     <button class="btn btn-info pop" type="button">Next  ></button>
                   </div>
                    
                 </form>
@@ -193,7 +193,7 @@
                  </div>
                   <div class="form-fields">
                     <span class="form-labels">Date of Birth</span>
-                 <input class="form-control" type="text">
+                 <input class="form-control" type="date">
                  </div>
                  <div class="form-fields">
                   <span style="margin: 0; padding: 0; width: 28%;" class="form-labels">Departure</span>
@@ -243,14 +243,14 @@
                  </div>
                  <div class="form-fields">
                     <span class="form-labels">Email</span>
-                 <input class="form-control" type="text">
+                 <input class="form-control" type="email">
                  </div>
                  <div class="form-fields">
                     <span class="form-labels">Phone</span>
-                 <input class="form-control" type="text">
+                 <input class="form-control" type="number">
                  </div>
                  <div class="form-fields  form-btn">
-                     <button class="btn btn-info" type="submit">Next  ></button>
+                     <button class="btn btn-info pop" type="button">Next  ></button>
                   </div>
                 </form>
     <!-- other forms -->
@@ -270,7 +270,7 @@
      </div>             
       <div class="form-fields">
         <span class="form-labels">Date of Birth</span>
-     <input class="form-control" type="text">
+     <input class="form-control" type="date">
      </div>
      <div class="form-fields">
       <span style="margin: 0; padding: 0; width: 28%;" class="form-labels">Departure</span>
@@ -320,24 +320,59 @@
      </div>
      <div class="form-fields">
         <span class="form-labels">Email</span>
-     <input class="form-control" type="text">
+     <input class="form-control" type="email">
      </div>
      <div class="form-fields">
         <span class="form-labels">Phone</span>
-     <input class="form-control" type="text">
+     <input class="form-control" type="number">
      </div>
      <div class="form-fields  form-btn">
-         <button class="btn btn-info" type="submit">Next  ></button>
+         <button class="btn btn-info pop" type="button">Next  ></button>
       </div>
        
     </form>
             </div>
 
         </div>
-
+        <div style="width: 50%;" class="form-img">
+          <img style="width:100%" src="./assests/img/imgpsh_fullsize_anim6.png" alt="">
+      </div>
     </div>
 </section>
-
+    <!-- pup up   -->
+    <div style="display: flex; position: fixed; left: 0;" class="box-model box-model-closed">
+      <div class="model">
+        <span id="close-model">&times;</span>
+          <div class="quote-title f-title">
+            <h2>Choose a Payment Method</h2>
+          </div>
+          <div class="quote-form">
+            <form action="" method="post">
+            <select class="form-control" name="quotes" id="quote-select">
+              <option value="0">--Choose--</option>
+              <option value="M-PESA">M-PESA</option>
+              <option value="Airtel Money">Airtel Money</option>
+            </select>
+            <div class="msg"></div>
+            <div class="number-field wow fadeInUp">
+            <span class="lb"></span>
+            <input class="form-control" type="number" name="" id="" required>
+          </div>
+          </form>
+          </div>
+          <div class="quote-btn">
+  
+            <button type="submit" class="button buttn bt">Submit</button>
+          </div>
+      
+      
+      </div>
+      <style>
+      
+      </style>
+    </div>
+  
+    <!-- end pop up -->
 <section>
     <div class="container">
         <div class="row ">
@@ -397,12 +432,12 @@
             
             <div class="wow bounceInUp col-lg-4">
               <h3 style="margin: 0;padding: 0;">Travel Insurance</h3>
-              <h5>Fast and Eazy insurance</h5>
-                <p>
+              <h5 style='color: rgb(73, 87, 138);'>Fast and Eazy insurance</h5>
+                <p class="about-text">
                   Kenya’s award-winning travel Insurance provider. We provide Annual, Single Trip, Local trips and Backpacker travel insurance to suit different trips abroad, Visa requirements, budgets and needs. Travel Medical Insurance protects you in the event of an illness or injury when traveling outside of Kenya or travelling locally.
                 </p>
             </div>
-            <div class="wow bounceInUp col-lg-4">
+            <div class="wow bounceInUp col-lg-4 about-text">
               It provides key medical benefits in case of an emergency. Traveling is an exciting experience, but unpredictable illnesses and accidents can happen. Even worse, the resulting medical bills can be overwhelming. Annual travel insurance provides a Worldwide cover. No matter what holiday or trip you have planned abroad, we will help you stay protected. Get a quick travel insurance quote below now...<br>
             <a class="btn btn-info" href="#">Read more</a>
             </div>
@@ -543,6 +578,8 @@ go to top button
   <script src="./Fast and Easy Insurance_Bima Rahisi_files/main.js"></script>
   <!-- <script src="./assests/js/index.js"></script> -->
   <script src="./assests/js/forms.js"></script>
+  <script src="./assests/js/index.js"></script>
+  <script src="./assests/js/popup.js"></script>
 
 
 

@@ -10,7 +10,9 @@
     padding: 0;
     /* background: red; */
 }
-
+#header{
+  box-shadow: -1px 10px 20px rgba(76, 76, 77, 0.075);
+}
 .navbar .brandname .logo3{
   left: 10px;
   top: 0px;
@@ -243,7 +245,14 @@ align-self: center;
   text-align: center;
   padding-bottom: 30px;
 }
-
+.section-title h2{
+  font-size: 32px;
+  font-weight: 500;
+  margin-bottom: 20px;
+  padding-bottom: 0;
+  font-family: "Poppins", sans-serif;
+  color: #635551;
+}
 .buttn {
   line-height: 6px;
   display: grid;
@@ -313,6 +322,7 @@ align-self: center;
   }
 }
 
+
 @media (max-width: 1200px) {
  
   .intro-image img{
@@ -349,18 +359,10 @@ align-self: center;
   .hero-row{
     flex-direction: column-reverse;
   }
-  .about-img{
-    display: flex;
-    justify-content:center ;
-  }
   .policy-links{
     flex-direction: column;
   }
-  .about-info{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-  }
+ 
 
   
   .aj-img{
@@ -390,6 +392,20 @@ align-self: center;
       justify-content: center;
     }
     
+}
+@media (max-width: 600px){
+  .about-img{
+    display: flex;
+    justify-content:center ;
+  }
+  .about-info{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .f-title h2{
+    font-size:25px;
+  }
 }
 #menu {
 position: absolute;
@@ -539,5 +555,103 @@ width: 25px;
   /*about*/
   .about-info{
     display: flex;
+  }
+  .about-text{
+    text-align: justify;
+  }
+  .about head{
+    color: #000;
+  }
+  /* ======================contact=================== */
+   
+  .contact-box .info-box h3 {
+    font-size: 20px;
+    color: #656262;
+    font-weight: 700;
+    margin: 10px 0 10px 68px;
+  }
+  
+  .contact-box .info-box p {
+    padding: 0;
+    line-height: 24px;
+    font-size: 14px;
+    margin: 0 0 0 68px;
+  }
+  
+  .contact-box .contact-form-email {
+    box-shadow: 0 0 30px rgba(214, 215, 216, 0.6);
+    padding: 30px;
+  }
+  
+  .contact-box .contact-form-email .error-message {
+    display: none;
+    color: #fff;
+    background: #ed3c0d;
+    text-align: left;
+    padding: 15px;
+    font-weight: 600;
+  }
+  
+  .contact-box .contact-form-email .error-message br + br {
+    margin-top: 25px;
+  }
+  
+  .contact-box .contact-form-email .sent-message {
+    display: none;
+    color: #fff;
+    background: #18d26e;
+    text-align: center;
+    padding: 15px;
+    font-weight: 600;
+  }
+  
+  .contact-box .contact-form-email .loading {
+    display: none;
+    background: #fff;
+    text-align: center;
+    padding: 15px;
+  }
+  
+  .contact-box .contact-form-email .loading:before {
+    content: "";
+    display: inline-block;
+    border-radius: 50%;
+    width: 24px;
+    height: 24px;
+    margin: 0 10px -6px 0;
+    border: 3px solid #18d26e;
+    border-top-color: #eee;
+    -webkit-animation: animate-loading 1s linear infinite;
+    animation: animate-loading 1s linear infinite;
+  }
+  
+  .contact-box .contact-form-email input, .contact .contact-form-email textarea {
+    border-radius: 0;
+    box-shadow: none;
+    font-size: 14px;
+  }
+  
+  .contact-box .contact-form-email input:focus, .contact .contact-form-email textarea:focus {
+    border-color: #21aeff;
+  }
+  
+  .contact-boxt .contact-form-email input {
+    padding: 10px 15px;
+  }
+  
+  .contact-box .contact-form-email textarea {
+    padding: 12px 15px;
+  }
+  
+  .contact-box .contact-form-email button[type="submit"] {
+    background: #21c0ff;
+    border: 0;
+    padding: 10px 24px;
+    color: #fff;
+    transition: 0.4s;
+  }
+  
+  .contact-box .contact-form-email button[type="submit"]:hover {
+    background: #54ddff;
   }
   

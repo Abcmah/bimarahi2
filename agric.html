@@ -21,14 +21,14 @@
   <!--==========================
   Header
   ============================-->
-   <header style="background: rgba(241, 243, 245, 0.753); backdrop-filter: blur(12px); -webkit-backdrop-filter: blur(12px);" id="header" class="fixed-top">
+   <header id="header" class="fixed-top">
     <div class="container">
       <div class="logo float-left">
         <a href="index.html" class="scrollto"><img src="./Fast and Easy Insurance_Bima Rahisi_files/logo3.png" alt="" class="img-fluid"></a>
       </div>
       <nav class="main-nav float-right d-none d-lg-block">
         <ul>
-          <li class="active"><a href="./index.html">Home</a></li>
+          <li><a href="./index.html">Home</a></li>
           <li><a href="about.html">About Us</a></li>  
           <li class="drop-down"><a href="#">Our Products<span><svg id="dropdown-icon" width="16" height="16" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg" fill="currentColor"><path fill-rule="evenodd" clip-rule="evenodd" d="M7.976 10.072l4.357-4.357.62.618L8.284 11h-.618L3 6.333l.619-.618 4.357 4.357z"/></svg></span></a>
             <ul>
@@ -54,7 +54,7 @@
                   <li><a href="./microhealth.html">Micro Health cover</a></li>                          
                 </ul>
               </li> 
-              <li><a href="./agric.html">Agricultural Cover</a></li>
+              <li class="active"><a href="./agric.html">Agricultural Cover</a></li>
             </ul>
           </li>      
           <li><a href="#contact">Contact Us</a></li>
@@ -66,8 +66,7 @@
   </header>
   <!-- ================================= -->
   <section id="hero">
-    <div class="container">
-      <div class="row hero-row">
+    <div class="container hero-row">
         <div class="col-lg-4">
           <div class="products">
               <div class=" title">
@@ -107,87 +106,116 @@
                   
               </div>
           </div>
-          
+      
          
       </div>
-        <div style="padding: 0%;" class="forms forms-lg col-md-6">
+
+        <div style="margin-top: 50px;" class="forms">
+
           <div class="nav-tab tabular-nav">
             <div id="tab-one" class="tab activated">Individual</div>
             <div id="tab-two" class="tab">Group</div>
             <div id="tab-three" class="tab">Other</div>
-        </div>
-          <!-- <div class="tabular-nav">
-            <ul class="nav nav-tabs">
-                <li  style="width: 33%;" class="nav-item "><a id="tab-one" class="nav-link activated" href="#">Educate Protect Cover</a></li>
-                <li style="width: 33%; "class="nav-item"><a id="tab-two" class="nav-link" href="#">Group Cover</a></li>
-                <li style="width: 33%; text-align: center;" class="nav-item"><a id="tab-three" class="nav-link" href="#">Other</a></li>
-            </ul>
-        </div> -->
-            <div class="container">
-                <form class="tab-one" action="">
-                
-                  <div class="form-fields">
-                    <span class="form-labels">Full Name</span>
-                 <input class="form-control" type="text">
-                 </div>
-                 <div class="form-fields">
-                    <span class="form-labels">Telephone</span>
-                 <input class="form-control" type="text">
-                 </div>
-                 <div class="form-fields">
-                    <span class="form-labels">Email</span>
-                 <input class="form-control" type="text">
-                 </div>
-
-                 <div class="form-fields">
-                    <span class="form-labels">Age</span>
-                 <input class="form-control" type="text">
-                 </div>
-                 <div class="form-fields  form-btn">
-                     <button class="btn btn-info" type="submit">Next  ></button>
-                  </div>
-                   
-                </form>
-    <!-- Comprehensive form -->
-                <form class="tab-two" action="">
-                  <div class="form-fields">
-                    <span class="form-labels">Organization</span>
-                 <input class="form-control" type="text">
-                 </div>
-                 <div class="form-fields">
-                    <span class="form-labels">Telephone</span>
-                 <input class="form-control" type="text">
-                 </div>
-                 <div class="form-fields">
-                    <span class="form-labels">Email</span>
-                 <input class="form-control" type="text">
-                 </div>
-
-                 <div class="form-fields">
-                    <span class="form-labels">Farmers</span>
-                 <input class="form-control" type="text">
-                 </div>
-                 <div class="form-fields  form-btn">
-                     <button class="btn btn-info" type="submit">Next  ></button>
-                  </div>
-                  
-                </form>
-    <!-- other forms -->
-    <form class="tab-three" action="">
-                    
+          </div>
         
-       
-    </form>
+        
+                <div class="container">
+                  <form action="" class="tab-one">
+                  
+                    <div class="form-fields">
+                      <span class="form-labels">Full Name</span>
+                   <input class="form-control" type="text">
+                   </div>
+                   <div class="form-fields">
+                      <span class="form-labels">Telephone</span>
+                   <input class="form-control" type="text">
+                   </div>
+                   <div class="form-fields">
+                      <span class="form-labels">Email</span>
+                   <input class="form-control" type="text">
+                   </div>
+  
+                   <div class="form-fields">
+                      <span class="form-labels">Age</span>
+                   <input class="form-control" type="text">
+                   </div>
+                   <div class="form-fields  form-btn">
+                       <button class="btn btn-info pop" type="button">Next  ></button>
+                    </div>
+                     
+                  </form>
+      <!-- Comprehensive form -->
+                  <form class="tab-two" action="">
+                    <div class="form-fields">
+                      <span class="form-labels">Organization</span>
+                   <input class="form-control" type="text">
+                   </div>
+                   <div class="form-fields">
+                      <span class="form-labels">Telephone</span>
+                   <input class="form-control" type="text">
+                   </div>
+                   <div class="form-fields">
+                      <span class="form-labels">Email</span>
+                   <input class="form-control" type="text">
+                   </div>
+  
+                   <div class="form-fields">
+                      <span class="form-labels">Farmers</span>
+                   <input class="form-control" type="text">
+                   </div>
+                   <div class="form-fields  form-btn">
+                       <button type="button" class="btn btn-info pop" >Next  ></button>
+                    </div>
+                    
+                  </form>
+      <!-- other forms -->
+      <form class="tab-three" action="">
+                      
+          
+         
+      </form>
+                </div>
+             
+              
+      
             </div>
+     
+        
 
         </div>
 
-      </div>
-      
-
-    </div>
 </section>
+  <!-- pup up   -->
+  <div style="display: flex; position: fixed; left: 0;" class="box-model box-model-closed">
+    <div class="model">
+      <span id="close-model">&times;</span>
+        <div class="quote-title f-title">
+          <h2>Choose a Payment Method</h2>
+        </div>
+        <div class="quote-form">
+          <form action="" method="post">
+          <select class="form-control" name="quotes" id="quote-select">
+            <option value="0">--Choose--</option>
+            <option value="M-PESA">M-PESA</option>
+            <option value="Airtel Money">Airtel Money</option>
+          </select>
+          <div class="msg"></div>
+          <div class="number-field wow fadeInUp">
+          <span class="lb"></span>
+          <input class="form-control" type="number" name="" id="" required>
+        </div>
+        </form>
+        </div>
+        <div class="quote-btn">
 
+          <button type="submit" class="button buttn bt">Submit</button>
+        </div>
+    
+    
+    </div>
+  </div>
+
+  <!-- end pop up -->
 <section>
   <div class="container">
       <div class="row ">
@@ -199,14 +227,14 @@
           <div class="col-lg-4">
             <div class="protitle">
               <h3 style="margin: 0;padding: 0;">Agricultural Insurance Cover</h3>
-              <h5>Fast and Easy Insurance</h5>
+              <h5 style='color: rgb(73, 87, 138);'>Fast and Easy Insurance</h5>
             </div>
-              <p>
+              <p class="about-text">
                 Agriculture and livestock account for one third of Kenya's annual economic output. Climate change, however, is making weather patterns increasingly unpredictable, so Kenya's farmers in particular are feeling the effects of climate change . Smallholder farmers who depend on rain-fed agriculture and use low-technology farming methods are particularly vulnerable to droughts, given that less than 1% are currently protected by some form of insurance.
               </p>
           </div>
           <div class="col-lg-4">
-              <p style="padding-top: 50px;">
+              <p class="about-text" style="padding-top: 50px;">
                 Whether you’re involved in livestock rearing or crop farming, we understand your need for an insurance policy to protect your livelihood. We will help you manage your risks properly and protect your farm from unfortunate outcomes.
               </p>
           </div>
@@ -348,7 +376,8 @@ go to top button
   <script src="./assests/js/index.js"></script>
   <script src="./assests/js/forms.js"></script>
 
-
+  <script src="./assests/js/popup.js"></script>
+  <!-- /* forms-popup */ -->
 
 <div id="lightboxOverlay" class="lightboxOverlay" style="display: none;"></div><div id="lightbox" class="lightbox" style="display: none;"><div class="lb-outerContainer"><div class="lb-container"><img class="lb-image" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=="><div class="lb-nav"><a class="lb-prev" href="https://bimarahisi.ke/"></a><a class="lb-next" href="https://bimarahisi.ke/"></a></div><div class="lb-loader"><a class="lb-cancel"></a></div></div></div><div class="lb-dataContainer"><div class="lb-data"><div class="lb-details"><span class="lb-caption"></span><span class="lb-number"></span></div><div class="lb-closeContainer"><a class="lb-close"></a></div></div></div></div>
 

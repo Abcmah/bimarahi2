@@ -1,11 +1,18 @@
 // openning model
 let close = document.querySelector('#close-model');
 let boxModel = document.querySelector('.box-model');
-let btngetquote = document.querySelector('.btn-getquote');
+let btngetquote = document.querySelectorAll('.pop');
 
-btngetquote.addEventListener('click',()=>{
-     boxModel.classList.add('box-model-open')
-})
+// btngetquote.addEventListener('click',()=>{
+//      boxModel.classList.add('box-model-open')
+// })
+
+for(let i=0;i<btngetquote.length;i++){
+  btngetquote[i].addEventListener('click',()=>{
+    boxModel.classList.add('box-model-open');
+  })
+}
+
 close.addEventListener('click',()=>{
     boxModel.classList.remove('box-model-open')
 })

@@ -63,7 +63,7 @@
               <li><a href="agric.html">Agricultural Cover</a></li>
             </ul>
           </li>
-          <li><a href="#contact">Contact Us</a></li>
+          <li><a href="contact.html">Contact Us</a></li>
           <li><a href="#footer">Terms and Policies</a></li>
         </ul>
       </nav><!-- .main-nav -->
@@ -74,17 +74,10 @@
     <div class="container hero-row">
         <div class="forms">
           <div class="nav-tab tabular-nav">
-            <div id="tab-one" class="tab activated">Family</div>
+            <div style="border-radius: 8px 0px 0px 0px;" id="tab-one" class="tab activated">Family</div>
             <div id="tab-two" class="tab">Children</div>
-            <div id="tab-three" class="tab">Student</div>
+            <div style="border-radius: 0px 8px 0px 0px;" id="tab-three" class="tab">Student</div>
         </div>
-            <!-- <div class="tabular-nav">
-                <ul class="nav nav-tabs">
-                    <li  style="width: 33%;" class="nav-item "><a id="tab-one" class="nav-link activated" href="#">Family</a></li>
-                    <li style="width: 33%; "class="nav-item"><a id="tab-two" class="nav-link" href="#">Children</a></li>
-                    <li style="width: 33%; text-align: center;" class="nav-item"><a id="tab-three" class="nav-link" href="#">Student</a></li>
-                </ul>
-            </div> -->
             <div class="container">
                 <form class="tab-one" action="">
                 
@@ -179,9 +172,9 @@
     <!-- Comprehensive form -->
                 <form class="tab-two" action="">
                   <div class="form-fields">
-                    <div style="display: flex; justify-content: space-between;" role="radiogroup">
+                    <div style="display: flex; justify-content: space-between; margin: auto;" role="radiogroup">
                       <div>
-                        <input role="radio" type="radio" name="trip" id="Single">
+                        <input role="radio" aria-checked="true" type="radio" name="trip" id="Single">
                         <label for="Single">Single Trip</label>
                       </div>
                      <div style="margin-left: 5rem;">
@@ -256,9 +249,9 @@
     <!-- other forms -->
     <form class="tab-three" action="">
       <div class="form-fields">
-        <div style="display: flex; justify-content: space-between;" role="radiogroup">
+        <div style="display: flex; justify-content: space-between; margin: auto;" role="radiogroup">
           <div>
-            <input role="radio" type="radio" name="trip" id="Single">
+            <input role="radio" aria-checked="true" type="radio" name="trip" id="Single">
             <label for="Single">Single Trip</label>
           </div>
          <div style="margin-left: 5rem;">
@@ -267,7 +260,7 @@
          </div>
           
         </div>
-     </div>             
+     </div>            
       <div class="form-fields">
         <span class="form-labels">Date of Birth</span>
      <input class="form-control" type="date">

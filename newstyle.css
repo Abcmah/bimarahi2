@@ -349,6 +349,71 @@ align-self: center;
 .policy-links{
   display:flex; justify-content:space-between;padding-bottom: 20px;
 }
+
+
+ /* ======================contact=================== */  
+ .contact{
+  margin: auto;
+  margin-top: 80px;
+  height: 90vh;
+  /* width: 100%; */
+  max-width: 1500px;
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  grid-auto-flow: column;
+  grid-auto-flow: column dense;
+}
+.footer-mobi{
+  display: none;
+}
+.left-side{
+  background-color: #004a99 ;
+  font-size: 14px;
+  font-family: "Montserrat", sans-serif;
+}
+.contact-main{
+  background-image: url('../assests/img/imgpsh_fullsize_anim1.png');
+  background-size: cover;
+  background-position: center;  
+ }
+ .contact-box{
+  background-color: rgba(0, 0,0, 0.8);
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.contact-forms{
+  width: 70%;
+  margin: auto;
+}
+.contact-forms .in{
+  box-shadow: none;
+  background-color: rgba(62, 62, 65, 0.8);
+}
+.contact-forms label{
+  color: aliceblue;
+}
+#footer{
+  max-width: 1500px;
+  margin: auto;
+} 
+
+ 
+ .contact-box button[type="submit"] {
+  background: #21c0ff;
+  border: 0;
+  padding: 10px 24px;
+  color: #fff;
+  transition: 0.4s;
+}
+
+.contact-box  button[type="submit"]:hover {
+  background: #77ddf7;
+}
+
+
 @media (max-width: 991px) {
   .model{
     width: 90%;
@@ -361,14 +426,13 @@ align-self: center;
   }
   .policy-links{
     flex-direction: column;
-  }
- 
-
-  
+  } 
   .aj-img{
     margin: auto;
     background-color: transparent;
-    margin-bottom: 60px;
+    margin-bottom: 30px;
+    width: 300px;
+    height: 300px;
   }
   #intro .container{
     margin-top: 1rem;
@@ -390,6 +454,44 @@ align-self: center;
     .con-center{
       display: flex;
       justify-content: center;
+    }
+    /* contact */
+    .contact{
+      margin-top: 60px;
+    }
+    .left-side{
+      grid-column: 1/-1;
+      order: 2;
+    }
+    .contact-main{
+      grid-column: 1 /-1;
+      order: 1;
+    }
+    .footer-mobi{
+      display: block;
+
+    }
+    .copyright, .credits{
+      display: flex;
+      justify-content: center;
+    }
+    #footer{
+
+     display: none;
+    }
+    .contact-forms{
+      width: 100%;
+      margin: 0;
+    }
+    .contact-con{
+      padding: 0px;
+      width: 100%;
+      margin: auto;
+    }
+
+    /* form image */
+    .form-img{
+      display: none;
     }
     
 }
@@ -562,96 +664,5 @@ width: 25px;
   .about head{
     color: #000;
   }
-  /* ======================contact=================== */
-   
-  .contact-box .info-box h3 {
-    font-size: 20px;
-    color: #656262;
-    font-weight: 700;
-    margin: 10px 0 10px 68px;
-  }
-  
-  .contact-box .info-box p {
-    padding: 0;
-    line-height: 24px;
-    font-size: 14px;
-    margin: 0 0 0 68px;
-  }
-  
-  .contact-box .contact-form-email {
-    box-shadow: 0 0 30px rgba(214, 215, 216, 0.6);
-    padding: 30px;
-  }
-  
-  .contact-box .contact-form-email .error-message {
-    display: none;
-    color: #fff;
-    background: #ed3c0d;
-    text-align: left;
-    padding: 15px;
-    font-weight: 600;
-  }
-  
-  .contact-box .contact-form-email .error-message br + br {
-    margin-top: 25px;
-  }
-  
-  .contact-box .contact-form-email .sent-message {
-    display: none;
-    color: #fff;
-    background: #18d26e;
-    text-align: center;
-    padding: 15px;
-    font-weight: 600;
-  }
-  
-  .contact-box .contact-form-email .loading {
-    display: none;
-    background: #fff;
-    text-align: center;
-    padding: 15px;
-  }
-  
-  .contact-box .contact-form-email .loading:before {
-    content: "";
-    display: inline-block;
-    border-radius: 50%;
-    width: 24px;
-    height: 24px;
-    margin: 0 10px -6px 0;
-    border: 3px solid #18d26e;
-    border-top-color: #eee;
-    -webkit-animation: animate-loading 1s linear infinite;
-    animation: animate-loading 1s linear infinite;
-  }
-  
-  .contact-box .contact-form-email input, .contact .contact-form-email textarea {
-    border-radius: 0;
-    box-shadow: none;
-    font-size: 14px;
-  }
-  
-  .contact-box .contact-form-email input:focus, .contact .contact-form-email textarea:focus {
-    border-color: #21aeff;
-  }
-  
-  .contact-boxt .contact-form-email input {
-    padding: 10px 15px;
-  }
-  
-  .contact-box .contact-form-email textarea {
-    padding: 12px 15px;
-  }
-  
-  .contact-box .contact-form-email button[type="submit"] {
-    background: #21c0ff;
-    border: 0;
-    padding: 10px 24px;
-    color: #fff;
-    transition: 0.4s;
-  }
-  
-  .contact-box .contact-form-email button[type="submit"]:hover {
-    background: #54ddff;
-  }
+ 
   

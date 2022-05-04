@@ -1127,13 +1127,7 @@ justify-content: space-between;
 .contact-icon{
   background-color: #003166;
 }
-#contact .info svg {
-  /* font-size: 32px;
-  color: #007bff;
-  fill: #007bff;
-  float: left;
-  line-height: 1; */
-}
+
 
 #contact .info p {
   padding: 0 0 10px 36px;

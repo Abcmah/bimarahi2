@@ -20,7 +20,6 @@ tabTwo.addEventListener('click',()=>{
     tabOne.classList.remove('activated')
     tabThree.classList.remove('activated')
     formTwo.style.display = "block";
-    console.log('works')
 })
 tabThree.addEventListener('click',()=>{
     formOne.style.display = "none";

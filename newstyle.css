@@ -475,8 +475,7 @@ align-self: center;
       display: flex;
       justify-content: center;
     }
-    #footer{
-
+    .contact-footer{
      display: none;
     }
     .contact-forms{
@@ -490,6 +489,7 @@ align-self: center;
     }
 
     /* form image */
+    /* =================================== */
     .form-img{
       display: none;
     }

@@ -62,7 +62,8 @@
               </li> 
               <li><a href="./agric.html">Agricultural Cover</a></li>
             </ul>
-          </li>       
+          </li>    
+          <li><a href="careers.html">Careers</a></li>   
           <li><a href="contact.html">Contact Us</a></li>
           <li><a href="#footer">Terms and Policies</a></li>
         </ul>
@@ -118,29 +119,33 @@
           <div id="tab-two" class="tab">Group Accident Cover</div>
           <div style="border-radius: 0px 8px 0px 0px;" id="tab-three" class="tab">Other</div>
       </div>
-       
+      <center style="color: red;"><p class="error-mgs">*All field required</p></center>
           <div class="container">
               <form class="tab-one" action="">
               
                 <div class="form-fields">
-                  <span class="form-labels">Organization</span>
-               <input class="form-control" type="text">
+                  <span class="form-labels">Full Name</span>
+               <input class="form-control personal-input" type="text" required>
                </div>
                <div class="form-fields">
-                  <span class="form-labels">Telephone</span>
-               <input class="form-control" type="text">
+                  <span class="form-labels">ID No</span>
+               <input class="form-control personal-input" type="number">
                </div>
                <div class="form-fields">
-                  <span class="form-labels">Email</span>
-               <input class="form-control" type="text">
+                  <span class="form-labels">Phone Number</span>
+               <input class="form-control personal-input" type="number">
+               </div>
+               <div class="form-fields">
+                  <span class="form-labels">Email Address</span>
+               <input class="form-control personal-input" type="email" required>
                </div>
 
                <div class="form-fields">
-                  <span class="form-labels">Employees</span>
-               <input class="form-control" type="text">
+                  <span class="form-labels">Date of Birth</span>
+               <input class="form-control personal-input" type="date" required>
                </div>
                <div class="form-fields  form-btn">
-                   <button class="btn btn-info pop" type="button">Next  ></button>
+                   <button class="btn btn-info personal-btn" type="button">Submit</button>
                 </div>
                  
               </form>
@@ -148,23 +153,23 @@
               <form class="tab-two" action="">
                   
                 <div class="form-fields">
-                  <span class="form-labels">Organization</span>
-               <input class="form-control" type="text">
+                  <span class="form-labels">Name of Organization</span>
+               <input class="form-control group-acc-input" type="text" required>
                </div>
                <div class="form-fields">
                   <span class="form-labels">Telephone</span>
-               <input class="form-control" type="text">
+               <input class="form-control group-acc-input" type="number" required>
                </div>
                <div class="form-fields">
-                  <span class="form-labels">Email</span>
-               <input class="form-control" type="email">
+                  <span class="form-labels">Email Address</span>
+               <input class="form-control group-acc-input" type="email" required>
                </div>
                <div class="form-fields">
-                  <span class="form-labels">Employees</span>
-                  <input class="form-control" type="text">
+                  <span class="form-labels">No of Employees</span>
+                  <input class="form-control group-acc-input" type="number" required>
                </div>
                <div class="form-fields  form-btn">
-                   <button class="btn btn-info pop" type="button">Next  ></button>
+                   <button class="btn btn-info group-acc-btn" type="button">Submit</button>
                 </div>
               </form>
   <!-- other forms -->
@@ -386,6 +391,42 @@ go to top button
   tabne.addEventListener('click',()=>{
     group.style.display='none';
   })
+
+  //personal
+  let m = document.querySelector('.error-mgs');
+  let personalInput = document.querySelectorAll('.personal-input');
+  let personalBtn = document.querySelector('.personal-btn').addEventListener('click',validedu);
+  function validedu(){
+    let filledPersonalInput =[]
+    for(let i=0;i < personalInput.length;i++){
+    if(personalInput[i].value){
+      filledPersonalInput.push(personalInput[i])
+    }
+    else{
+      personalInput[i].style.border ='1px solid red'
+      personalInput[i].classList.add('input-shake');
+      m.style.display ='block'
+    }
+    filledPersonalInput.length == personalInput.length  &&  boxModel.classList.add('box-model-open');
+  }
+  }
+  //group
+  let groupAccInput = document.querySelectorAll('.group-acc-input');
+  let groupAccBtn = document.querySelector('.group-acc-btn').addEventListener('click',grouAccValid);
+  function grouAccValid(){
+    let filledGroupAccInput = []
+    for(let i=0;i < groupAccInput.length;i++){
+    if(groupAccInput[i].value){
+     filledGroupAccInput.push(groupAccInput[i])
+    }
+    else{
+      groupAccInput[i].style.border ='1px solid red'
+      groupAccInput[i].classList.add('input-shake');
+      m.style.display ='block'
+    }
+    filledGroupAccInput.length == groupAccInput.length  &&  boxModel.classList.add('box-model-open');
+  }
+  }
 </script>
 
 

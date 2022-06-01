@@ -62,7 +62,8 @@
               </li> 
               <li><a href="./agric.html">Agricultural Cover</a></li>
             </ul>
-          </li>       
+          </li>    
+          <li><a href="careers.html">Careers</a></li>   
           <li><a href="contact.html">Contact Us</a></li>
           <li><a href="#footer">Terms and Policies</a></li>
         </ul>
@@ -118,26 +119,27 @@
           <div style="border-radius: 0px 8px 0px 0px;" id="tab-three" class="tab"></div>
       </div>
           <div class="container">
+            <center style="color: red;"><p class="error-mgs">*All field required</p></center>
               <form class="tab-one" action="">
               
                 <div class="form-fields">
-                  <span class="form-labels">Organization</span>
-               <input class="form-control" type="text" required>
+                  <span class="form-labels">Name of Organization</span>
+               <input class="form-control group-mic-input" type="text" required>
                </div>
                <div class="form-fields">
                   <span class="form-labels">Telephone</span>
-               <input class="form-control" type="text" required>
+               <input class="form-control group-mic-input" type="text" required>
                </div>
                <div class="form-fields">
-                  <span class="form-labels">Email</span>
-               <input class="form-control" type="email">
+                  <span class="form-labels">Email Address</span>
+               <input class="form-control group-mic-input" type="email" required>
                </div>
                <div class="form-fields">
-                  <span class="form-labels">Employees</span>
-                  <input class="form-control" type="number">
+                  <span class="form-labels">No of Employees</span>
+                  <input class="form-control group-mic-input" type="number">
                </div>
                <div class="form-fields  form-btn">
-                   <button class="btn btn-info pop" type="button">Next  ></button>
+                   <button class="btn btn-info group-mic-btn" type="button">Submit</button>
                 </div>
                  
               </form>
@@ -365,7 +367,26 @@ go to top button
   <script src="./assests/js/forms.js"></script>
   <script src="./assests/js/popup.js"></script>
 
-
+<script>
+  let m = document.querySelector('.error-mgs')
+  // individual
+  let groupMicInput = document.querySelectorAll('.group-mic-input');
+  let groupMicBtn = document.querySelector('.group-mic-btn').addEventListener('click',grouMicValid);
+  function grouMicValid(){
+    let filledGroupMicInput =[]
+    for(let i=0;i < groupMicInput.length;i++){
+    if(groupMicInput[i].value){
+     filledGroupMicInput.push(groupMicInput[i])
+    }
+    else{
+      groupMicInput[i].style.border ='1px solid red'
+      groupMicInput[i].classList.add('input-shake');
+      m.style.display ='block'
+    }
+    filledGroupMicInput.length == groupMicInput.length &&  boxModel.classList.add('box-model-open');
+  }
+  }
+</script>
 
 <div id="lightboxOverlay" class="lightboxOverlay" style="display: none;"></div><div id="lightbox" class="lightbox" style="display: none;"><div class="lb-outerContainer"><div class="lb-container"><img class="lb-image" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=="><div class="lb-nav"><a class="lb-prev" href="https://bimarahisi.ke/"></a><a class="lb-next" href="https://bimarahisi.ke/"></a></div><div class="lb-loader"><a class="lb-cancel"></a></div></div></div><div class="lb-dataContainer"><div class="lb-data"><div class="lb-details"><span class="lb-caption"></span><span class="lb-number"></span></div><div class="lb-closeContainer"><a class="lb-close"></a></div></div></div></div>
 

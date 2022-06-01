@@ -1,4 +1,7 @@
 let msg = document.querySelector('.msg');
+let pagename = location.pathname
+
+// let boxModel = document.querySelector('.box-model');
   let list = document.querySelector('.bt');
   let select = document.querySelector('#quote');
   list.addEventListener('click',()=>{
@@ -13,6 +16,8 @@ let msg = document.querySelector('.msg');
       select.classList.add('input-shake')
     }
   })
+//
+
 
   // =======================================
   

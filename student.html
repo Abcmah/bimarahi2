@@ -62,7 +62,8 @@
               </li> 
               <li><a href="./agric.html">Agricultural Cover</a></li>
             </ul>
-          </li>        
+          </li>    
+          <li><a href="careers.html">Careers</a></li>    
           <li><a href="contact.html">Contact Us</a></li>
           <li><a href="#footer">Terms and Policies</a></li>
         </ul>
@@ -122,29 +123,33 @@
             <div id="tab-two" class="tab">Institution</div>
             <div style="border-radius: 0px 8px 0px 0px;" id="tab-three" class="tab">Other</div>
         </div>
-      
+        <center style="color: red;"><p class="error-mgs">*All field required</p></center>
             <div class="container">
                 <form class="tab-one" action="">
                 
                   <div class="form-fields">
                     <span class="form-labels">Full Name</span>
-                 <input class="form-control" type="text">
+                 <input class="form-control student-input" type="text" required>
                  </div>
                  <div class="form-fields">
-                    <span class="form-labels">Mobile</span>
-                 <input class="form-control" type="text">
+                    <span class="form-labels">ID No</span>
+                 <input class="form-control student-input" type="number" required>
                  </div>
                  <div class="form-fields">
-                    <span class="form-labels">Email</span>
-                 <input class="form-control" type="text">
+                    <span class="form-labels">Phone Number</span>
+                 <input class="form-control student-input" type="number" required>
+                 </div>
+                 <div class="form-fields">
+                    <span class="form-labels">Email Address</span>
+                 <input class="form-control student-input" type="text">
                  </div>
 
                  <div class="form-fields">
-                    <span class="form-labels">Age</span>
-                 <input class="form-control" type="text">
+                    <span class="form-labels">Date of Birth</span>
+                 <input class="form-control student-input" type="date">
                  </div>
                  <div class="form-fields  form-btn">
-                     <button class="btn btn-info pop" type="button">Next  ></button>
+                     <button class="btn btn-info student-btn" type="button">Submit</button>
                   </div>
                    
                 </form>
@@ -152,23 +157,23 @@
                 <form class="tab-two" action="">
                     
                   <div class="form-fields">
-                    <span class="form-labels">Institution</span>
-                 <input class="form-control" type="text">
+                    <span class="form-labels"> Name of Institution</span>
+                 <input class="form-control institution-input" type="text" required>
                  </div>
                  <div class="form-fields">
-                    <span class="form-labels">Telephone</span>
-                 <input class="form-control" type="text">
+                    <span class="form-labels">Telephone Number</span>
+                 <input class="form-control institution-input" type="text" required>
                  </div>
                  <div class="form-fields">
-                    <span class="form-labels">Email</span>
-                 <input class="form-control" type="email">
+                    <span class="form-labels">Email Address</span>
+                 <input class="form-control institution-input" type="email">
                  </div>
                  <div class="form-fields">
-                    <span class="form-labels">Students</span>
-                    <input class="form-control" type="text">
+                    <span class="form-labels">No of Students</span>
+                    <input class="form-control institution-input" type="number" required>
                  </div>
                  <div class="form-fields  form-btn">
-                     <button class="btn btn-info pop" type="button">Next  ></button>
+                     <button class="btn btn-info institution-btn" type="button">Submit</button>
                   </div>
                 </form>
     <!-- other forms -->
@@ -376,7 +381,45 @@ go to top button
   <script src="./assests/js/forms.js"></script>
   <script src="./assests/js/popup.js"></script>
 
+<script>
+   let m = document.querySelector('.error-mgs');
+  let studentInput = document.querySelectorAll('.student-input');
+  let studentBtn = document.querySelector('.student-btn').addEventListener('click',studentValid)
+  function studentValid(){
+    let filledStudentInput =[]
+    for(let i=0;i < studentInput.length;i++){
+    if(studentInput[i].value){
+     filledStudentInput.push(studentInput[i])
+    }
+    else{
+      studentInput[i].style.border ='1px solid red'
+      studentInput[i].classList.add('input-shake');
+      m.style.display ='block'
+    }
+    filledStudentInput.length == studentInput.length &&  boxModel.classList.add('box-model-open');
 
+  }
+  }
+
+  // institution
+  let institutionInput = document.querySelectorAll('.institution-input')
+  let institutionBtn = document.querySelector('.institution-btn').addEventListener('click',institutionValid)
+  function institutionValid(){
+    let filledInstitutionInput =[]
+    for(let i=0;i < institutionInput.length;i++){
+    if(institutionInput[i].value){
+     filledInstitutionInput.push(institutionInput[i]);
+    }
+    else{
+      institutionInput[i].style.border ='1px solid red'
+      institutionInput[i].classList.add('input-shake');
+      m.style.display ='block'
+    }
+    filledInstitutionInput.length == institutionInput.length &&  boxModel.classList.add('box-model-open');
+
+  }
+  }
+</script>
 
 <div id="lightboxOverlay" class="lightboxOverlay" style="display: none;"></div><div id="lightbox" class="lightbox" style="display: none;"><div class="lb-outerContainer"><div class="lb-container"><img class="lb-image" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=="><div class="lb-nav"><a class="lb-prev" href="https://bimarahisi.ke/"></a><a class="lb-next" href="https://bimarahisi.ke/"></a></div><div class="lb-loader"><a class="lb-cancel"></a></div></div></div><div class="lb-dataContainer"><div class="lb-data"><div class="lb-details"><span class="lb-caption"></span><span class="lb-number"></span></div><div class="lb-closeContainer"><a class="lb-close"></a></div></div></div></div>
 

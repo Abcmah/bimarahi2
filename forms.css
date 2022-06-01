@@ -14,7 +14,7 @@ body{
 .forms{
     width: 40%;
     box-shadow: -1px -1px 10px rgb(182, 173, 173);
-    padding-bottom: 10px;
+    padding-bottom: 15px;
     margin-bottom:60px;
     border-radius: 8px;
 }
@@ -116,6 +116,9 @@ justify-content: space-between;
 .forms-lg{
 width: 70%;
 }
+.error-mgs{
+    display: none;
+}
 .form-img{
     width: 60%;
     animation: animate-image 2.0s infinite backwards;
@@ -174,7 +177,6 @@ margin-bottom: 20px;
    
     .forms{
         width: 100%;
-
     }
     .links ul li a{
         flex-direction: row

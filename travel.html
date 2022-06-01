@@ -63,6 +63,7 @@
               <li><a href="agric.html">Agricultural Cover</a></li>
             </ul>
           </li>
+          <li><a href="careers.html">Careers</a></li>
           <li><a href="contact.html">Contact Us</a></li>
           <li><a href="#footer">Terms and Policies</a></li>
         </ul>
@@ -91,16 +92,16 @@
                       <input role="radio" aria-checked="false" type="radio" name="trip" id="annual">
                       <label for="annual">Annual Trip</label>
                      </div>
-                      
+                     <center style="color: red;"><p class="error-mgs">*All field required</p></center>
                     </div>
                  </div>
                  <div class="form-fields">
                     <span class="form-labels">Date of Birth</span>
-                 <input class="form-control" type="date" required>
+                 <input class="form-control family-input" type="date" required>
                  </div>
                  <div class="form-fields">
                     <span class="form-labels">With Spouse?</span>
-                 <input class="form-control" type="text">
+                 <input class="form-control family-input" type="text">
                  </div>
                 
                   <div style="display: flex; align-items: center;" class="dates">
@@ -108,27 +109,27 @@
                       <div class="form-fields">
                         <span style="margin: 0; padding: 0; width: 40%;" class="form-labels">Departure</span>
                         <span style="width: 50%;">
-                          <input class="form-control" type="date" name="" required>
+                          <input class="form-control family-input" type="date" name="" required>
                          </span>
                      </div>
                      <div class="form-fields">
                          <span style="margin: 0; padding: 0; width: 40%;" class="form-labels">Return</span>
                          <span style="width: 50%;">
-                          <input class="form-control" type="date" name="" required>
+                          <input class="form-control family-input" type="date" name="" required>
                          </span>
                      
                       </div>
                     </div>
                    
                     <span style="width: 30%;">
-                      <input class="form-control" type="number" placeholder="+/- 0 Day" >
+                      <input class="form-control family-input" type="number" placeholder="+/- 0 Day" >
                     </span>
                   </div>
 
                   <div class="form-fields">
                     <span style="margin: 0; padding: 0; width: 28%;" class="form-labels">Adults</span>
                     <span style="width: 20%;" class="">
-                      <input class="form-control" type="number" placeholder="2" required>
+                      <input class="form-control family-input" type="number" placeholder="2" required>
                     </span>
                      
                   </select>
@@ -136,36 +137,39 @@
                  <div class="form-fields">
                     <span style="margin: 0; padding: 0; width: 28%;" class="form-labels">Children</span>
                     <span style="width: 20%;" class="">
-                      <input class="form-control" type="number" placeholder="0" required>
+                      <input class="form-control family-input" type="number" placeholder="0" required>
                     </span>(0-17 Years)
                  
                  </div>
                  <div class="form-fields">
                     <span class="form-labels">From</span>
-                 <input class="form-control" type="text">
+                 <input class="form-control family-input" type="text" required>
                  </div>
                  <div class="form-fields">
                     <span class="form-labels">To</span>
-                 <input class="form-control" type="text">
+                 <input class="form-control family-input" type="text" required>
                  </div>
                  <div class="form-fields">
                     <span class="form-labels">Full Name</span>
-                 <input class="form-control" type="text">
+                 <input class="form-control family-input" type="text" required>
                  </div>
                  <div class="form-fields">
+                  <span class="form-labels">ID No</span>
+               <input type="number" class="form-control family-input" required>     </div>
+                 <div class="form-fields">
                     <span class="form-labels">Nationality</span>
-                 <input class="form-control" type="text">
+                 <input class="form-control family-input" type="text" required>
                  </div>
                  <div class="form-fields">
                     <span class="form-labels">Email</span>
-                 <input class="form-control" type="email">
+                 <input class="form-control family-input" type="email" required>
                  </div>
                  <div class="form-fields">
                     <span class="form-labels">Phone</span>
-                 <input class="form-control" type="number">
+                 <input class="form-control family-input" type="number" required>
                  </div>
                  <div class="form-fields  form-btn">
-                     <button class="btn btn-info pop" type="button">Next  ></button>
+                     <button class="btn btn-info family-btn" type="button">Submit</button>
                   </div>
                    
                 </form>
@@ -186,64 +190,68 @@
                  </div>
                   <div class="form-fields">
                     <span class="form-labels">Date of Birth</span>
-                 <input class="form-control" type="date">
+                 <input class="form-control child-travel-input" type="date">
                  </div>
                  <div class="form-fields">
                   <span style="margin: 0; padding: 0; width: 28%;" class="form-labels">Departure</span>
                   <span style="width: 35%;" class="">
-                    <input class="form-control" type="date" placeholder="0">
+                    <input class="form-control child-travel-input" type="date" placeholder="0">
                   </span>
                   <span style="width: 25%; margin-left: 10px;" class="">
-                    <input class="form-control" type="time" placeholder="0">
+                    <input class="form-control child-travel-input" type="time" placeholder="0">
                   </span>
                
                </div>
                  <div class="form-fields">
                   <span style="margin: 0; padding: 0; width: 28%;" class="form-labels">Return</span>
                   <span style="width: 35%;" class="">
-                    <input class="form-control" type="date" placeholder="0">
+                    <input class="form-control child-travel-input" type="date" placeholder="0">
                   </span>
                   <span style="width: 25%; margin-left: 10px;" class="">
-                    <input class="form-control" type="time" placeholder="0">
+                    <input class="form-control child-travel-input" type="time" placeholder="0">
                   </span>
                
                </div>
                  <div class="form-fields">
                     <span class="form-labels">From</span>
-                 <select class="form-control" name="" id="">
-                     <option value="">Nairobi</option>
-                     <option value="">Mombasa</option>
-                     <option value="">Kisumu</option>
-                     <option value="">Kigali</option>
+                 <select class="form-control child-travel-input" name="" id="">
+                     <option value="Nairobi">Nairobi</option>
+                     <option value="Mombasa">Mombasa</option>
+                     <option value="Kisumu">Kisumu</option>
+                     <option value="Kigali">Kigali</option>
                  </select>
                  </div>
                  <div class="form-fields">
                     <span class="form-labels">To</span>
-                 <select class="form-control" name="" id="">
-                    
+                 <select class="form-control child-travel-input" name="" required>
+                    <option value="Nakuru">Nakuru</option>
                  </select>
                  </div>
                  
                  <div class="form-fields">
                     <span class="form-labels">Nationality</span>
-                    <select class="form-control" name="" id="">
+                    <select class="form-control child-travel-input" name="" id="">
+                      <option value="Kenyan"> Kenyan</option>
                     
                    </select>
                  </div>
                  <div class="form-fields">
                     <span class="form-labels">Full Name</span>
-                 <input class="form-control" type="text">
+                 <input class="form-control child-travel-input" type="text" required>
                  </div>
                  <div class="form-fields">
+                  <span class="form-labels">ID No</span>
+               <input type="number" class="form-control child-travel-input" required>     </div>
+                 <div class="form-fields">
                     <span class="form-labels">Email</span>
-                 <input class="form-control" type="email">
+                 <input class="form-control child-travel-input" type="email" required>
                  </div>
                  <div class="form-fields">
                     <span class="form-labels">Phone</span>
-                 <input class="form-control" type="number">
+                 <input class="form-control child-travel-input" type="number" required>
                  </div>
                  <div class="form-fields  form-btn">
-                     <button class="btn btn-info pop" type="button">Next  ></button>
+                     <button class="btn btn-info child-travel-btn" type="button">Submit</button>
                   </div>
                 </form>
     <!-- other forms -->
@@ -263,70 +271,76 @@
      </div>            
       <div class="form-fields">
         <span class="form-labels">Date of Birth</span>
-     <input class="form-control" type="date">
+     <input class="form-control student-travel-input" type="date" required>
      </div>
      <div class="form-fields">
       <span style="margin: 0; padding: 0; width: 28%;" class="form-labels">Departure</span>
       <span style="width: 35%;" class="">
-        <input class="form-control" type="date" placeholder="0">
+        <input class="form-control student-travel-input" type="date" placeholder="0" required>
       </span>
       <span style="width: 25%; margin-left: 10px;" class="">
-        <input class="form-control" type="time" placeholder="0">
+        <input class="form-control student-travel-input" type="time" placeholder="0" required>
       </span>
    
    </div>
      <div class="form-fields">
       <span style="margin: 0; padding: 0; width: 28%;" class="form-labels">Return</span>
       <span style="width: 35%;" class="">
-        <input class="form-control" type="date" placeholder="0">
+        <input class="form-control student-travel-input" type="date" placeholder="0" required>
       </span>
       <span style="width: 25%; margin-left: 10px;" class="">
-        <input class="form-control" type="time" placeholder="0">
+        <input class="form-control student-travel-input" type="time" placeholder="0" required>
       </span>
    
    </div>
      <div class="form-fields">
         <span class="form-labels">From</span>
-     <select class="form-control" name="" id="">
-         <option value="">Nairobi</option>
-         <option value="">Mombasa</option>
-         <option value="">Kisumu</option>
-         <option value="">Kigali</option>
+     <select class="form-control student-travel-input" name="" id="">
+         <option value="Nairobi">Nairobi</option>
+         <option value="Mombasa">Mombasa</option>
+         <option value="Kisumu">Kisumu</option>
+         <option value="Kigali">Kigali</option>
      </select>
      </div>
      <div class="form-fields">
         <span class="form-labels">To</span>
-     <select class="form-control" name="" id="">
-        
+     <select class="form-control student-travel-input" name="" id="">
+        <option value="Nakuru">Nakuru</option>
      </select>
      </div>
+     <div class="form-fields">
+        <span class="form-labels">ID No</span>
+     <input type="number" class="form-control student-travel-input">     </div>
      
      <div class="form-fields">
         <span class="form-labels">Nationality</span>
-        <select class="form-control" name="" id="">
-        
+        <select class="form-control student-travel-input" name="" id="">
+        <option value="Kenyan">Kenyan</option>
        </select>
      </div>
      <div class="form-fields">
         <span class="form-labels">Full Name</span>
-     <input class="form-control" type="text">
+     <input class="form-control student-travel-input" type="text" required>
      </div>
      <div class="form-fields">
         <span class="form-labels">Email</span>
-     <input class="form-control" type="email">
+     <input class="form-control student-travel-input" type="email" required>
      </div>
      <div class="form-fields">
         <span class="form-labels">Phone</span>
-     <input class="form-control" type="number">
+     <input class="form-control student-travel-input" type="number" required>
      </div>
      <div class="form-fields  form-btn">
-         <button class="btn btn-info pop" type="button">Next  ></button>
+         <button class="btn btn-info btn-travel-input" type="button">Submit</button>
       </div>
        
     </form>
             </div>
 
         </div>
+
+        <!-- ============?========================= -->
+        <!-- the element below will not Available no phone -->
         <div style="width: 50%;" class="form-img">
           <img style="width:100%" src="./assests/img/imgpsh_fullsize_anim6.png" alt="">
       </div>
@@ -574,7 +588,61 @@ go to top button
   <script src="./assests/js/index.js"></script>
   <script src="./assests/js/popup.js"></script>
 
-
+  <script>
+    let m = document.querySelector('.error-mgs');
+   let familyInput = document.querySelectorAll('.family-input');
+   let familyBtn = document.querySelector('.family-btn').addEventListener('click',familyValid)
+   function familyValid(){
+     let filledFamilyInput =[]
+     for(let i=0;i < familyInput.length;i++){
+     if(familyInput[i].value){
+      filledFamilyInput.push(familyInput[i])
+     }
+     else{
+       familyInput[i].style.border ='1px solid red'
+       familyInput[i].classList.add('input-shake');
+       m.style.display ='block'
+     }
+     filledFamilyInput.length == familyInput.length  &&  boxModel.classList.add('box-model-open');
+ 
+   }
+   }
+ 
+   // institution
+   let childTravelInput = document.querySelectorAll('.child-travel-input')
+   let studentTravelBtn = document.querySelector('.child-travel-btn').addEventListener('click',childTravelValid)
+   function childTravelValid(){
+     let filledChildTravelInput =[]
+     for(let i=0;i < childTravelInput.length;i++){
+     if(childTravelInput[i].value){
+      filledChildTravelInput.push(childTravelInput[i]);
+      }
+     else{
+       childTravelInput[i].style.border ='1px solid red'
+       childTravelInput[i].classList.add('input-shake');
+       m.style.display ='block'
+     }
+     filledChildTravelInput.length == childTravelInput.length &&  boxModel.classList.add('box-model-open');
+   }
+   }
+  //  student
+  let studentTravelInput = document.querySelectorAll('.student-travel-input')
+   let childTravelBtn = document.querySelector('.btn-travel-input').addEventListener('click',institutionValid)
+   function institutionValid(){
+     let filledStudentTravelInput =[]
+     for(let i=0;i < studentTravelInput.length;i++){
+     if(studentTravelInput[i].value){
+      filledStudentTravelInput.push(studentTravelInput[i]) 
+     }
+     else{
+       studentTravelInput[i].style.border ='1px solid red'
+       studentTravelInput[i].classList.add('input-shake');
+       m.style.display ='block'
+     }
+     filledStudentTravelInput.length == studentTravelInput.length &&  boxModel.classList.add('box-model-open');
+   }
+   }
+ </script>
 
 <div id="lightboxOverlay" class="lightboxOverlay" style="display: none;"></div><div id="lightbox" class="lightbox" style="display: none;"><div class="lb-outerContainer"><div class="lb-container"><img class="lb-image" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=="><div class="lb-nav"><a class="lb-prev" href="https://bimarahisi.ke/"></a><a class="lb-next" href="https://bimarahisi.ke/"></a></div><div class="lb-loader"><a class="lb-cancel"></a></div></div></div><div class="lb-dataContainer"><div class="lb-data"><div class="lb-details"><span class="lb-caption"></span><span class="lb-number"></span></div><div class="lb-closeContainer"><a class="lb-close"></a></div></div></div></div>
 

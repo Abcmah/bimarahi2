@@ -54,6 +54,7 @@
                   <li><a href="./microhealth.html">Micro Health cover</a></li>                          
                 </ul>
               </li> 
+              <li><a href="careers.html">Careers</a></li>
               <li class="active"><a href="agric.html">Agricultural Cover</a></li>
             </ul>
           </li>      
@@ -117,30 +118,34 @@
             <div id="tab-two" class="tab">Group</div>
             <div style="border-radius: 0px 8px 0px 0px;" id="tab-three" class="tab">Other</div>
           </div>
-        
+          <center style="color: red;"><p class="error-mgs">*All field required</p></center>
         
                 <div class="container">
                   <form action="" class="tab-one">
                   
                     <div class="form-fields">
                       <span class="form-labels">Full Name</span>
-                   <input class="form-control" type="text">
+                   <input class="form-control indivi-agric-input" type="text" required>
                    </div>
                    <div class="form-fields">
-                      <span class="form-labels">Telephone</span>
-                   <input class="form-control" type="text">
+                      <span class="form-labels">ID No</span>
+                   <input class="form-control indivi-agric-input" type="number" required>
                    </div>
                    <div class="form-fields">
-                      <span class="form-labels">Email</span>
-                   <input class="form-control" type="text">
+                      <span class="form-labels">Phone Number</span>
+                   <input class="form-control indivi-agric-input" type="number" required>
+                   </div>
+                   <div class="form-fields">
+                      <span class="form-labels">Email Address</span>
+                   <input class="form-control indivi-agric-input" type="email" required>
                    </div>
   
                    <div class="form-fields">
-                      <span class="form-labels">Age</span>
-                   <input class="form-control" type="text">
+                      <span class="form-labels">Date of Birth</span>
+                   <input class="form-control indivi-agric-input" type="date" required>
                    </div>
                    <div class="form-fields  form-btn">
-                       <button class="btn btn-info pop" type="button">Next  ></button>
+                       <button class="btn btn-info indivi-agric-btn" type="button">Submit</button>
                     </div>
                      
                   </form>
@@ -148,23 +153,23 @@
                   <form class="tab-two" action="">
                     <div class="form-fields">
                       <span class="form-labels">Organization</span>
-                   <input class="form-control" type="text">
+                   <input class="form-control group-agric-input" type="text" required>
                    </div>
                    <div class="form-fields">
                       <span class="form-labels">Telephone</span>
-                   <input class="form-control" type="text">
+                   <input class="form-control group-agric-input" type="text" required>
                    </div>
                    <div class="form-fields">
-                      <span class="form-labels">Email</span>
-                   <input class="form-control" type="text">
+                      <span class="form-labels">Email Address</span>
+                   <input class="form-control group-agric-input" type="email" required>
                    </div>
   
                    <div class="form-fields">
-                      <span class="form-labels">Farmers</span>
-                   <input class="form-control" type="text">
+                      <span class="form-labels">No of Farmers</span>
+                   <input class="form-control group-agric-input" type="number">
                    </div>
                    <div class="form-fields  form-btn">
-                       <button type="button" class="btn btn-info pop" >Next  ></button>
+                       <button type="button" class="btn btn-info group-agric-btn" >Submit</button>
                     </div>
                     
                   </form>
@@ -378,7 +383,43 @@ go to top button
 
   <script src="./assests/js/popup.js"></script>
   <!-- /* forms-popup */ -->
+<script>
+  let m = document.querySelector('.error-mgs');
+  let indiviAgricInput = document.querySelectorAll('.indivi-agric-input');
+  let Btn = document.querySelector('.indivi-agric-btn').addEventListener('click',validedu);
+  function validedu(){
+    let filledIndiviAgric = []
+    for(let i=0;i < indiviAgricInput.length;i++){
+    if(indiviAgricInput[i].value){
+      filledIndiviAgric.push(indiviAgricInput[i]);
+    }
+    else{
+      indiviAgricInput[i].style.border ='1px solid red'
+      indiviAgricInput[i].classList.add('input-shake');
+      m.style.display ='block'
+    }
+    filledIndiviAgric.length == indiviAgricInput.length &&  boxModel.classList.add('box-model-open');
 
+  }
+  }
+  // group
+  let groupAgricInput = document.querySelectorAll('.group-agric-input');
+  let groupBtn = document.querySelector('.group-agric-btn').addEventListener('click',agricGroupValid);
+  function agricGroupValid(){
+    let filledGroupAgricInput = []
+    for(let i=0;i < groupAgricInput.length;i++){
+    if(groupAgricInput[i].value){
+      filledGroupAgricInput.push(groupAgricInput[i])
+    }
+    else{
+      groupAgricInput[i].style.border ='1px solid red'
+      groupAgricInput[i].classList.add('input-shake');
+      m.style.display ='block'
+    }
+    filledGroupAgricInput.length == groupAgricInput.length &&  boxModel.classList.add('box-model-open');
+  }
+  }
+</script>
 <div id="lightboxOverlay" class="lightboxOverlay" style="display: none;"></div><div id="lightbox" class="lightbox" style="display: none;"><div class="lb-outerContainer"><div class="lb-container"><img class="lb-image" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=="><div class="lb-nav"><a class="lb-prev" href="https://bimarahisi.ke/"></a><a class="lb-next" href="https://bimarahisi.ke/"></a></div><div class="lb-loader"><a class="lb-cancel"></a></div></div></div><div class="lb-dataContainer"><div class="lb-data"><div class="lb-details"><span class="lb-caption"></span><span class="lb-number"></span></div><div class="lb-closeContainer"><a class="lb-close"></a></div></div></div></div>
 
 </body></html>

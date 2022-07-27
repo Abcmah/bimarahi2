@@ -665,4 +665,43 @@ width: 25px;
     color: #000;
   }
  
-  
+  /* new changes to product section */
+  .icon-cn{
+    width: 4rem;
+    height: 4rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50px;
+    border: 2px solid rgb(255, 255, 255);
+}
+.product-card h4, a{
+    text-align: center;
+    color: #fff;
+}
+.col-card{
+    border: 1px solid rgb(255, 255, 255);
+    background-color: hsla(215, 65%, 52%,0.9);;
+    
+}
+.col-card :hover{
+    background-color: blue;
+    transform: scale(0.9);
+}
+.product-card{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 200px;
+    gap: 1rem;
+    color: #fff;
+    align-items: center;
+    transition: all .5s ;
+
+}
+#product-icn{
+    color: rgb(220, 220, 238);
+    width: 35px;
+    height: 35px;
+    fill: rgb(253, 253, 255);
+}

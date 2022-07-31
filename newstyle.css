@@ -675,8 +675,7 @@ width: 25px;
     border-radius: 50px;
     border: 2px solid rgb(255, 255, 255);
 }
-.product-card h4, a{
-    text-align: center;
+.product-card .title a{
     color: #fff;
 }
 .col-card{
@@ -685,7 +684,8 @@ width: 25px;
     
 }
 .col-card :hover{
-    background-color: blue;
+    background-color: rgb(39, 39, 133);
+    border-radius: 30px;
     transform: scale(0.9);
 }
 .product-card{
@@ -704,4 +704,34 @@ width: 25px;
     width: 35px;
     height: 35px;
     fill: rgb(253, 253, 255);
+}
+/*--------------------------------------------------------------
+# Clients
+--------------------------------------------------------------*/
+.clients .swiper-pagination {
+  margin-top: 20px;
+  position: relative;
+}
+
+.clients .swiper-pagination .swiper-pagination-bullet {
+  width: 12px;
+  height: 12px;
+  background-color: #fff;
+  opacity: 1;
+  border: 1px solid #2142ff;
+}
+
+.clients .swiper-pagination .swiper-pagination-bullet-active {
+  background-color: #2167ff;
+}
+
+.clients .swiper-slide img {
+  opacity: 0.5;
+  filter: grayscale(100%);
+}
+
+.clients .swiper-slide img:hover {
+  filter: none;
+  opacity: 1;
+  transform: scale(1.1);
 }
